@@ -1,0 +1,242 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 08 11:29:52 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>128 seconds (128896 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='allTest.FlightTest.verifyDestinationCity()'><b>verifyDestinationCity</b><br>Test class: allTest.FlightTest<br>Test method: To verify if user is able to click Ranchi from city dropdown list</td>
+<td>
+<a href="#attributes-1134599394" onClick='toggleBox("attributes-1134599394", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-1134599394"></a><div class='log' id="attributes-1134599394">
+name: passMessage, value:[The option is clicked]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.verifyToTextBox()'><b>verifyToTextBox</b><br>Test class: allTest.FlightTest<br>Test method: To validate To textbox is enabled</td>
+<td>
+<a href="#attributes-758705661" onClick='toggleBox("attributes-758705661", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-758705661"></a><div class='log' id="attributes-758705661">
+name: passMessage, value:[A drop drown is displayed showing the city names list]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.verifyFromTextBox()'><b>verifyFromTextBox</b><br>Test class: allTest.FlightTest<br>Test method: To validate From textbox is enabled</td>
+<td>
+<a href="#attributes-2132736278" onClick='toggleBox("attributes-2132736278", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-2132736278"></a><div class='log' id="attributes-2132736278">
+name: passMessage, value:[A drop drown is displayed showing the city names list]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.verifyCardPaymentOption()'><b>verifyCardPaymentOption</b><br>Test class: allTest.FlightTest<br>Test method: To verify if user is able to choose 'Credit/Debit/ATM Card' option</td>
+<td>
+<a href="#attributes-1333858345" onClick='toggleBox("attributes-1333858345", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-1333858345"></a><div class='log' id="attributes-1333858345">
+name: passMessage, value:[User is redirected to flight booking page]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.verifyPayWithoutSavingCardButton()'><b>verifyPayWithoutSavingCardButton</b><br>Test class: allTest.FlightTest<br>Test method: To verify functionality of 'Pay without saving card' option</td>
+<td>
+<a href="#attributes-1214368937" onClick='toggleBox("attributes-1214368937", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-1214368937"></a><div class='log' id="attributes-1214368937">
+name: passMessage, value:[User is redirected to flight booking page]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.verifyOriginCity()'><b>verifyOriginCity</b><br>Test class: allTest.FlightTest<br>Test method: To verify if user is able to click Bengaluru from city dropdown list</td>
+<td>
+<a href="#attributes-1373051324" onClick='toggleBox("attributes-1373051324", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-1373051324"></a><div class='log' id="attributes-1373051324">
+name: passMessage, value:[The option is clicked]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.verifyPriceFilter()'><b>verifyPriceFilter</b><br>Test class: allTest.FlightTest<br>Test method: To verify the functionality of Price Filter</td>
+<td>
+<a href="#attributes-430845669" onClick='toggleBox("attributes-430845669", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-430845669"></a><div class='log' id="attributes-430845669">
+name: passMessage, value:[User is redirected to overview details page]<br></div></td><td></td>
+<td>26</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.enterPassengerDetails()'><b>enterPassengerDetails</b><br>Test class: allTest.FlightTest<br>Test method: To verify user is able to fill passenger details <br>Parameters: [Ljava.lang.String;@6cdbe5ec</td>
+<td>
+<a href="#attributes-2095803461" onClick='toggleBox("attributes-2095803461", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-2095803461"></a><div class='log' id="attributes-2095803461">
+name: passMessage, value:[An error message is displayed stating &apos;Card number is not valid&apos;]<br></div></td><td></td>
+<td>19</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.verifySearchButton()'><b>verifySearchButton</b><br>Test class: allTest.FlightTest<br>Test method: To verify the functionality of "Search flights" button after user click it</td>
+<td>
+<a href="#attributes-561227586" onClick='toggleBox("attributes-561227586", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-561227586"></a><div class='log' id="attributes-561227586">
+name: passMessage, value:[Flight details having prices in ascending order is displayed]<br></div></td><td></td>
+<td>16</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.verifyCardDetailsFields()'><b>verifyCardDetailsFields</b><br>Test class: allTest.FlightTest<br>Test method: To verify if user is able to enter credit card details</td>
+<td>
+<a href="#attributes-718781734" onClick='toggleBox("attributes-718781734", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-718781734"></a><div class='log' id="attributes-718781734">
+name: passMessage, value:[User is redirected to flight booking page]<br></div></td><td></td>
+<td>1</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.verifyDateBtn()'><b>verifyDateBtn</b><br>Test class: allTest.FlightTest<br>Test method: To verify Departure date button is clickable</td>
+<td>
+<a href="#attributes-1058553002" onClick='toggleBox("attributes-1058553002", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-1058553002"></a><div class='log' id="attributes-1058553002">
+name: passMessage, value:[A drop down calendar is displayed with showing the prices of flights for each day]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.verifyPassengerDetails()'><b>verifyPassengerDetails</b><br>Test class: allTest.FlightTest<br>Test method: To verify passenger details are displayed correctly<br>Parameters: [Ljava.lang.String;@14b8a751</td>
+<td>
+<a href="#attributes-131837504" onClick='toggleBox("attributes-131837504", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-131837504"></a><div class='log' id="attributes-131837504">
+name: passMessage, value:[User is redirected to flight booking page]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.navigateToFLightsPage()'><b>navigateToFLightsPage</b><br>Test class: allTest.FlightTest<br>Test method: To validate if Flight menu button is diaplyed and is clickable</td>
+<td>
+<a href="#attributes-485542604" onClick='toggleBox("attributes-485542604", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-485542604"></a><div class='log' id="attributes-485542604">
+name: passMessage, value:[User is redirected to flight booking page]<br></div></td><td></td>
+<td>1</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.validationOfLowestFares()'><b>validationOfLowestFares</b><br>Test class: allTest.FlightTest<br>Test method: To verify fare displayed is lowest for the day</td>
+<td>
+<a href="#attributes-942217109" onClick='toggleBox("attributes-942217109", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-942217109"></a><div class='log' id="attributes-942217109">
+name: passMessage, value:[The date is selected and is displayed]<br></div></td><td></td>
+<td>46</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.lowestDateSelection()'><b>lowestDateSelection</b><br>Test class: allTest.FlightTest<br>Test method: To verify user is able to select date from Calendar for the lowest price</td>
+<td>
+<a href="#attributes-7508078" onClick='toggleBox("attributes-7508078", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-7508078"></a><div class='log' id="attributes-7508078">
+name: passMessage, value:[A dropdown is displayed and final details is displayed]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.verifyFlightDetails()'><b>verifyFlightDetails</b><br>Test class: allTest.FlightTest<br>Test method: To verify the details of flight is displayed at overview page</td>
+<td>
+<a href="#attributes-332139408" onClick='toggleBox("attributes-332139408", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-332139408"></a><div class='log' id="attributes-332139408">
+name: passMessage, value:[User is redirected to payment gateway to complete the payment]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.enterTravellerDetails()'><b>enterTravellerDetails</b><br>Test class: allTest.FlightTest<br>Test method: To verify user is able to add details in Travellers and class menu</td>
+<td>
+<a href="#attributes-867909510" onClick='toggleBox("attributes-867909510", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-867909510"></a><div class='log' id="attributes-867909510">
+name: passMessage, value:[User is redirected to avaible flights webpage]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+<tr>
+<td title='allTest.FlightTest.verifyBookBtn()'><b>verifyBookBtn</b><br>Test class: allTest.FlightTest<br>Test method: To verify the functionality of "Book now" button after user click on cheapest price flight</td>
+<td>
+<a href="#attributes-48063459" onClick='toggleBox("attributes-48063459", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-48063459"></a><div class='log' id="attributes-48063459">
+name: passMessage, value:[The flight details is displayed]<br></div></td><td></td>
+<td>2</td>
+<td>allTest.FlightTest@2a5c8d3f</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-08T11:29:52 IST" name="Default suite" finished-at="2024-01-08T11:32:01 IST" duration-ms="128896">
+    <groups>
+    </groups>
+    <test started-at="2024-01-08T11:29:52 IST" name="Default test" finished-at="2024-01-08T11:32:01 IST" duration-ms="128896">
+      <class name="allTest.FlightTest">
+        <test-method is-config="true" signature="configurations()[pri:0, instance:allTest.FlightTest@2a5c8d3f]" started-at="2024-01-08T11:29:52 IST" name="configurations" finished-at="2024-01-08T11:29:52 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurations -->
+        <test-method is-config="true" signature="configPages()[pri:0, instance:allTest.FlightTest@2a5c8d3f]" started-at="2024-01-08T11:29:52 IST" name="configPages" finished-at="2024-01-08T11:29:58 IST" duration-ms="5589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configPages -->
+        <test-method signature="navigateToFLightsPage()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[User is redirected to flight booking page]&gt;]" started-at="2024-01-08T11:29:58 IST" name="navigateToFLightsPage" description="To validate if Flight menu button is diaplyed and is clickable" finished-at="2024-01-08T11:30:00 IST" duration-ms="1697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to flight booking page]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- navigateToFLightsPage -->
+        <test-method signature="verifyFromTextBox()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[A drop drown is displayed showing the city names list]&gt;]" started-at="2024-01-08T11:30:00 IST" name="verifyFromTextBox" description="To validate From textbox is enabled" finished-at="2024-01-08T11:30:00 IST" depends-on-methods="allTest.FlightTest.navigateToFLightsPage" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[A drop drown is displayed showing the city names list]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyFromTextBox -->
+        <test-method signature="verifyOriginCity()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[The option is clicked]&gt;]" started-at="2024-01-08T11:30:01 IST" name="verifyOriginCity" description="To verify if user is able to click Bengaluru from city dropdown list" finished-at="2024-01-08T11:30:01 IST" depends-on-methods="allTest.FlightTest.verifyFromTextBox" duration-ms="569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[The option is clicked]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyOriginCity -->
+        <test-method signature="verifyToTextBox()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[A drop drown is displayed showing the city names list]&gt;]" started-at="2024-01-08T11:30:01 IST" name="verifyToTextBox" description="To validate To textbox is enabled" finished-at="2024-01-08T11:30:01 IST" depends-on-methods="allTest.FlightTest.verifyOriginCity" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[A drop drown is displayed showing the city names list]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyToTextBox -->
+        <test-method signature="verifyDestinationCity()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[The option is clicked]&gt;]" started-at="2024-01-08T11:30:02 IST" name="verifyDestinationCity" description="To verify if user is able to click Ranchi from city dropdown list" finished-at="2024-01-08T11:30:02 IST" depends-on-methods="allTest.FlightTest.verifyToTextBox" duration-ms="350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[The option is clicked]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyDestinationCity -->
+        <test-method signature="verifyDateBtn()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[A drop down calendar is displayed with showing the prices of flights for each day]&gt;]" started-at="2024-01-08T11:30:02 IST" name="verifyDateBtn" description="To verify Departure date button is clickable" finished-at="2024-01-08T11:30:02 IST" depends-on-methods="allTest.FlightTest.verifyDestinationCity" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[A drop down calendar is displayed with showing the prices of flights for each day]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyDateBtn -->
+        <test-method signature="validationOfLowestFares()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[The date is selected and is displayed]&gt;]" started-at="2024-01-08T11:30:02 IST" name="validationOfLowestFares" description="To verify fare displayed is lowest for the day" finished-at="2024-01-08T11:30:49 IST" depends-on-methods="allTest.FlightTest.verifyDateBtn" duration-ms="46945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[The date is selected and is displayed]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- validationOfLowestFares -->
+        <test-method signature="lowestDateSelection()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[A dropdown is displayed and final details is displayed]&gt;]" started-at="2024-01-08T11:30:50 IST" name="lowestDateSelection" description="To verify user is able to select date from Calendar for the lowest price" finished-at="2024-01-08T11:30:50 IST" depends-on-methods="allTest.FlightTest.validationOfLowestFares" duration-ms="509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[A dropdown is displayed and final details is displayed]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- lowestDateSelection -->
+        <test-method signature="enterTravellerDetails()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[User is redirected to avaible flights webpage]&gt;]" started-at="2024-01-08T11:30:50 IST" name="enterTravellerDetails" description="To verify user is able to add details in Travellers and class menu" finished-at="2024-01-08T11:30:50 IST" depends-on-methods="allTest.FlightTest.lowestDateSelection" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to avaible flights webpage]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- enterTravellerDetails -->
+        <test-method signature="verifySearchButton()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[Flight details having prices in ascending order is displayed]&gt;]" started-at="2024-01-08T11:30:51 IST" name="verifySearchButton" description="To verify the functionality of &quot;Search flights&quot; button after user click it" finished-at="2024-01-08T11:31:08 IST" depends-on-methods="allTest.FlightTest.enterTravellerDetails" duration-ms="16979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[Flight details having prices in ascending order is displayed]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifySearchButton -->
+        <test-method signature="verifyPriceFilter()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[User is redirected to overview details page]&gt;]" started-at="2024-01-08T11:31:08 IST" name="verifyPriceFilter" description="To verify the functionality of Price Filter" finished-at="2024-01-08T11:31:34 IST" depends-on-methods="allTest.FlightTest.verifySearchButton" duration-ms="26191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to overview details page]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyPriceFilter -->
+        <test-method signature="verifyBookBtn()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[The flight details is displayed]&gt;]" started-at="2024-01-08T11:31:34 IST" name="verifyBookBtn" description="To verify the functionality of &quot;Book now&quot; button after user click on cheapest price flight" finished-at="2024-01-08T11:31:37 IST" depends-on-methods="allTest.FlightTest.verifyPriceFilter" duration-ms="2462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[The flight details is displayed]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyBookBtn -->
+        <test-method signature="verifyFlightDetails()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[User is redirected to payment gateway to complete the payment]&gt;]" started-at="2024-01-08T11:31:37 IST" name="verifyFlightDetails" description="To verify the details of flight is displayed at overview page" finished-at="2024-01-08T11:31:37 IST" depends-on-methods="allTest.FlightTest.verifyBookBtn" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to payment gateway to complete the payment]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyFlightDetails -->
+        <test-method signature="enterPassengerDetails([Ljava.lang.String;)[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[An error message is displayed stating &#039;Card number is not valid&#039;]&gt;]" started-at="2024-01-08T11:31:37 IST" name="enterPassengerDetails" description="To verify user is able to fill passenger details " data-provider="passengerDetails" finished-at="2024-01-08T11:31:57 IST" depends-on-methods="allTest.FlightTest.verifyFlightDetails" duration-ms="19745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6cdbe5ec]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[An error message is displayed stating 'Card number is not valid']]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- enterPassengerDetails -->
+        <test-method signature="verifyPassengerDetails([Ljava.lang.String;)[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[User is redirected to flight booking page]&gt;]" started-at="2024-01-08T11:31:57 IST" name="verifyPassengerDetails" description="To verify passenger details are displayed correctly" data-provider="passengerDetails" finished-at="2024-01-08T11:31:57 IST" depends-on-methods="allTest.FlightTest.enterPassengerDetails" duration-ms="298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@14b8a751]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to flight booking page]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyPassengerDetails -->
+        <test-method signature="verifyCardPaymentOption()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[User is redirected to flight booking page]&gt;]" started-at="2024-01-08T11:31:58 IST" name="verifyCardPaymentOption" description="To verify if user is able to choose &#039;Credit/Debit/ATM Card&#039; option" finished-at="2024-01-08T11:31:58 IST" depends-on-methods="allTest.FlightTest.verifyPassengerDetails" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to flight booking page]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyCardPaymentOption -->
+        <test-method signature="verifyCardDetailsFields()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[User is redirected to flight booking page]&gt;]" started-at="2024-01-08T11:31:58 IST" name="verifyCardDetailsFields" description="To verify if user is able to enter credit card details" finished-at="2024-01-08T11:31:59 IST" depends-on-methods="allTest.FlightTest.verifyCardPaymentOption" duration-ms="1464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to flight booking page]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyCardDetailsFields -->
+        <test-method signature="verifyPayWithoutSavingCardButton()[pri:0, instance:allTest.FlightTest@2a5c8d3f, attributes: &lt;name: passMessage, value:[User is redirected to flight booking page]&gt;]" started-at="2024-01-08T11:32:00 IST" name="verifyPayWithoutSavingCardButton" description="To verify functionality of &#039;Pay without saving card&#039; option" finished-at="2024-01-08T11:32:00 IST" depends-on-methods="allTest.FlightTest.verifyCardDetailsFields" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to flight booking page]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyPayWithoutSavingCardButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:allTest.FlightTest@2a5c8d3f]" started-at="2024-01-08T11:32:00 IST" name="tearDown" finished-at="2024-01-08T11:32:01 IST" duration-ms="1204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- allTest.FlightTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
