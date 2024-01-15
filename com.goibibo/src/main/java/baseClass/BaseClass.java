@@ -77,7 +77,7 @@ public class BaseClass extends HomepageLocators {
 		fb = new FlightsBookingPage(driverLocal.get());
 	}
 	
-	@AfterTest
+	//@AfterTest
 	public void tearDown()
 	{
 		WebDriver driver1 = driverLocal.get();

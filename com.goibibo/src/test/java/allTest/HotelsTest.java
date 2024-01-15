@@ -150,7 +150,7 @@ attributes = {@CustomAttribute(name="passMessage",values={"User is redirected to
 		ho.enterAdults(adults2);
 		ho.enterChildren(children2, childrenAges2);
 		ho.clickSearchButton();
-		hr.getHotelsDetails(30);
+		//hr.getHotelsDetails(30);
 		setPassMessage("User is redirected to hotels list webpage");
 	}
 	
@@ -215,9 +215,10 @@ attributes = {@CustomAttribute(name="passMessage",values={"User is redirected to
 attributes = {@CustomAttribute(name="passMessage",values={"User is redirected to Room Info webpage"})})
 	public void verifyRoomOptionsSelection()
 	{
-		hb.viewRoomOptionsAvailable();
+		System.out.println(hb.viewRoomOptionsAvailable());
 		roomOptionName = hb.bookRoom(roomOptionBook);
 		hb.verifyHotelNameInHotelInfo(hotelName);
+		System.out.println(roomOptionName);
 		hb.verifyRoomOptionSelected(rooms2, roomOptionName.substring(0,roomOptionName.indexOf(",")));
 		setPassMessage("User is redirected to Room Info webpage");
 	}

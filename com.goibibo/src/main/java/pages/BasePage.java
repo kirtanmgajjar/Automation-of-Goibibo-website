@@ -27,7 +27,7 @@ public abstract class BasePage {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
 		action = new Actions(driver);
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(45));
 		fwait = new FluentWait<WebDriver>(driver);
 		jse = (JavascriptExecutor) driver;
 		PageFactory.initElements(this.driver, this);

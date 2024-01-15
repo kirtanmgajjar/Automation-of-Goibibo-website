@@ -3,31 +3,36 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="allTest.FlightTest">
+      <class name="allTest.HotelsTest">
         <methods>
-          <include name="validationOfLowestFares"/>
-          <include name="verifyOriginCity"/>
-          <include name="verifyFromTextBox"/>
-          <include name="navigateToFLightsPage"/>
-          <include name="verifyFlightDetails"/>
-          <include name="verifyPassengerDetails"/>
-          <include name="verifyPriceFilter"/>
+          <include name="verifySortingOptions"/>
+          <include name="verifyHotelSelection"/>
+          <include name="verify0RoomAdd"/>
           <include name="verifyPayWithoutSavingCardButton"/>
-          <include name="verifyBookBtn"/>
-          <include name="verifyDestinationCity"/>
-          <include name="verifyToTextBox"/>
-          <include name="tearDown"/>
-          <include name="verifySearchButton"/>
-          <include name="configPages"/>
-          <include name="enterTravellerDetails"/>
-          <include name="verifyCardDetailsFields"/>
-          <include name="lowestDateSelection"/>
+          <include name="validationOfDateFields"/>
+          <include name="verifyDetailsOnPaymentGateway"/>
           <include name="verifyCardPaymentOption"/>
-          <include name="enterPassengerDetails" invocation-numbers="0"/>
-          <include name="verifyDateBtn"/>
+          <include name="verify0AdultAdd"/>
+          <include name="validationOfWhereSearchfield"/>
+          <include name="verifyPaymentButton"/>
+          <include name="validationOfChildrenField"/>
+          <include name="verifyPriceFilter"/>
+          <include name="verifyOfferCodeSelection"/>
+          <include name="navigateToHotelsPage"/>
+          <include name="validationOfAdultsField"/>
+          <include name="verifyRequiredFields"/>
+          <include name="verifyCustomerRatingFilter"/>
+          <include name="validationOfRadioButtons"/>
+          <include name="validationOfSearchField"/>
+          <include name="configPages"/>
+          <include name="verifyPriceSummary"/>
+          <include name="validateSearchCriteria"/>
           <include name="configurations"/>
+          <include name="verifyCardDetailsFields"/>
+          <include name="verifySearchCriteria"/>
+          <include name="verifyRoomOptionsSelection"/>
         </methods>
-      </class> <!-- allTest.FlightTest -->
+      </class> <!-- allTest.HotelsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

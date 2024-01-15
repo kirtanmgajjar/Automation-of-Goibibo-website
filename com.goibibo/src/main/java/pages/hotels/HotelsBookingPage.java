@@ -47,6 +47,7 @@ public class HotelsBookingPage extends BasePage
 	By errorMessageLocator = By.xpath("//*[@class='sprite errorToastIcon']/following-sibling::*");
 	By roomBookingButtonsLocator = By.xpath("//*[@data-testid='selectRoomBtn']");
 	By hotelInfoNameLocator = By.xpath("//*[contains(@class,'ReviewHotelInfostyles__ReviewHotelNameDiv')]/h4");
+//	By hotelInfoNameLocator = By.xpath("//h1[@itemprop='name']");
 	By hotelInfoSearchCriteriaLocator = By.xpath("//*[contains(@class,'DurationBlockstyles__CheckInWrapPara')]");
 	By hotelInfoRoomDetailsLocator = By.xpath("//*[contains(@class,'RoomDetailsstyles__MultiRoomHeaderPara')]");
 	By hotelInfoRoomOptionLocator = By.xpath("//*[contains(@class,'RoomDetailsstyles__PropertyTypePara')]");
@@ -70,7 +71,7 @@ public class HotelsBookingPage extends BasePage
 	String roomBookingButtonLocator = "//*[@class='Roomstyles__RoomTypeTextStyled-sc-1vvh1xt-3 vHxaN' and text()='%s']/../../../descendant::*[@data-testid='selectRoomBtn']";
 	String roomBasePriceLocator = "//*[@class='Roomstyles__RoomTypeTextStyled-sc-1vvh1xt-3 vHxaN' and text()='%s']/../../../descendant::*[contains(@class,'RoomFlavorstyles__StrikeThroughPersuasionPriceTextStyled')]";
 	String roomPriceLocator = "//*[@class='Roomstyles__RoomTypeTextStyled-sc-1vvh1xt-3 vHxaN' and text()='%s']/../../../descendant::*[contains(@class,'RoomFlavorstyles__ActualPrice')]";
-	String stateSelectLocator = "//*[@class='sc-daBvwG gTaSYg' and text()='%s']";
+	String stateSelectLocator = "//*[@class='sc-dsXyEt lgEKKy' and text()='%s']";
 	String paymentOptionsLocator = "//*[@class='makeFlex column']//*[text()='%s']";
 	String optionsSelectboxLOcator = "//*[@class='font16' and text()='%s']";
 	
@@ -127,6 +128,7 @@ public class HotelsBookingPage extends BasePage
 	public String bookRoom(int optionNumber)
 	{
 		int count=0;
+		optionNumber = optionNumber<=roomBoookingWebElement.size() ? optionNumber : roomBoookingWebElement.size();
 		for(Entry<String,WebElement> entry: roomBoookingWebElement.entrySet())
 		{
 			count++;

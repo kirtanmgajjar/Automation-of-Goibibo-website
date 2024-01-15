@@ -35,7 +35,7 @@ public class ListenerUtility2 implements ITestListener{
 							.getTestClass().getRealClass().getSuperclass()
 							.getDeclaredField("driverLocal").get(result.getInstance())).get();
 			String browser = ((RemoteWebDriver) driver).getCapabilities().getBrowserName();
-			System.out.println(browser);
+			//System.out.println(browser);
 			if(reportid.get(browser)==null)
 			{
 				ExtentReports report = ExtentReportUtility.getReportInstance(reportFilePath+"Report_"+browser+".html");
@@ -45,7 +45,7 @@ public class ListenerUtility2 implements ITestListener{
 			Method method = result.getMethod().getConstructorOrMethod().getMethod();
 			String testName = method.getAnnotation(Test.class).testName();
 			String cat = browser + "_" + result.getMethod().getRealClass().getSimpleName();
-			System.out.println(cat);
+			//System.out.println(cat);
 			testid.put(cat, reportid.get(browser).createTest(testName));
 			testid.get(cat).info(result.getMethod().getDescription());
 			testid.get(cat).assignCategory(cat);
@@ -113,7 +113,7 @@ public class ListenerUtility2 implements ITestListener{
 		{
 			entry.getValue().flush();
 		}
-		System.out.println(testid.size());
+		//System.out.println(testid.size());
 	}
 	
 	
