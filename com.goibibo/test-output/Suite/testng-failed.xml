@@ -5,7 +5,7 @@
     <classes>
       <class name="allTest.HotelsTest">
         <methods>
-          <include name="verifySortingOptions"/>
+          <include name="verifySortingOptions" invocation-numbers="0 1 2"/>
           <include name="verifyHotelSelection"/>
           <include name="verify0RoomAdd"/>
           <include name="verifyPayWithoutSavingCardButton"/>

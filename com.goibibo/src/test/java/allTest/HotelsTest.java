@@ -14,9 +14,9 @@ import baseClass.BaseClass;
 
 public class HotelsTest extends BaseClass
 {
-	String hotelLocation = "Jamnagar, Gujarat, India";
-	String checkInDate = "18-01-2024";
-	String checkOutDate = "21-01-2024";
+	String hotelLocation = "Pune, Maharashtra, India";
+	String checkInDate = "18-02-2024";
+	String checkOutDate = "21-02-2024";
 	int rooms1 = 3;
 	int rooms2 = 1;
 	int adults1 = 3;
@@ -27,9 +27,9 @@ public class HotelsTest extends BaseClass
 	List<Integer> childrenAges2 = Arrays.asList(3);
 	List<String> priceFilters = Arrays.asList("\u20B92001 - \u20B94000");
 	String ratingFilter = "4+";
-	int hotelBook = 1;
-	int roomOptionBook = 2;
-	int offerCodeNumber = 3;
+	int hotelBook = 2;
+	int roomOptionBook = 3;
+	int offerCodeNumber = 4;
 	int nights = 3;
 	String hotelName;
 	String roomOptionName;

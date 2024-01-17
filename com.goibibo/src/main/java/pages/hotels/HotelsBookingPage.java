@@ -20,7 +20,7 @@ import pages.BasePage;
 public class HotelsBookingPage extends BasePage
 {
 	By roomOptionsLocator = By.xpath("//*[@data-testid='detail-roomSelection-room-flavor']");
-	By roomTypeLocator = By.xpath("//*[@class='Roomstyles__RoomTypeTextStyled-sc-1vvh1xt-3 vHxaN']");
+	By roomTypeLocator = By.xpath("//*[contains(@class,'Roomstyles__RoomTypeTextStyled')]");
 	By titleSelectboxLocator = By.xpath("//*[@class='PersonalProfilestyles__NameEnterSelect-sc-1t6fe6a-6 WIiFu']");
 	By firstNameTextboxLocator = By.xpath("//*[@data-guestdetailsinnerwrapid='first-name']");
 	By lastNameTextboxLocator = By.xpath("//*[@data-guestdetailsinnerwrapid='last-name']");
@@ -31,7 +31,8 @@ public class HotelsBookingPage extends BasePage
 	By pincodeTextboxLocator = By.id("Pincode");
 	By stateMenuLocator = By.xpath("//*[contains(@class,'sc-bTDODP')]");
 	By roomPaymentOptionsLocator = By.xpath("//*[@for='bookNow']");
-	By paymentButtonLocator = By.xpath("//*[@class='dwebCommonstyles__ButtonBase-sc-112ty3f-13 PaymentCustomButtonUIstyle__CustomButton-sc-12ekasb-0 kwEZmw kPPtwa']");
+//	By paymentButtonLocator = By.xpath("//*[@class='dwebCommonstyles__ButtonBase-sc-112ty3f-13 PaymentCustomButtonUIstyle__CustomButton-sc-12ekasb-0 kwEZmw kPPtwa']");
+	By paymentButtonLocator = By.xpath("//*[contains(@class,'PaymentCustomButtonUIstyle__CustomButton')]");
 	By cardNumberTextboxLOcator = By.name("cardNumber");
 	By expiryMonthTextboxLocator = By.name("expiryMonth");
 	By expiryYearTextboxLocator = By.name("expiryYear");
@@ -67,10 +68,10 @@ public class HotelsBookingPage extends BasePage
 	By payWithoutSavingCardButton = By.xpath("//*[@class='formBtnStroked flexOne appendLeft16  '][text()='Pay without saving card']");
 	
 	
-	String roomOptionsNameLocator = "//*[@class='Roomstyles__RoomTypeTextStyled-sc-1vvh1xt-3 vHxaN' and text()='%s']/../../../descendant::*[@id='room-options-name']";
-	String roomBookingButtonLocator = "//*[@class='Roomstyles__RoomTypeTextStyled-sc-1vvh1xt-3 vHxaN' and text()='%s']/../../../descendant::*[@data-testid='selectRoomBtn']";
-	String roomBasePriceLocator = "//*[@class='Roomstyles__RoomTypeTextStyled-sc-1vvh1xt-3 vHxaN' and text()='%s']/../../../descendant::*[contains(@class,'RoomFlavorstyles__StrikeThroughPersuasionPriceTextStyled')]";
-	String roomPriceLocator = "//*[@class='Roomstyles__RoomTypeTextStyled-sc-1vvh1xt-3 vHxaN' and text()='%s']/../../../descendant::*[contains(@class,'RoomFlavorstyles__ActualPrice')]";
+	String roomOptionsNameLocator = "//*[contains(@class,'Roomstyles__RoomTypeTextStyled') and text()='%s']/../../../descendant::*[@id='room-options-name']";
+	String roomBookingButtonLocator = "//*[contains(@class,'Roomstyles__RoomTypeTextStyled') and text()='%s']/../../../descendant::*[@data-testid='selectRoomBtn']";
+	String roomBasePriceLocator = "//*[contains(@class,'Roomstyles__RoomTypeTextStyled') and text()='%s']/../../../descendant::*[contains(@class,'RoomFlavorstyles__StrikeThroughPersuasionPriceTextStyled')]";
+	String roomPriceLocator = "//*[contains(@class,'Roomstyles__RoomTypeTextStyled') and text()='%s']/../../../descendant::*[contains(@class,'RoomFlavorstyles__ActualPrice')]";
 	String stateSelectLocator = "//*[@class='sc-dsXyEt lgEKKy' and text()='%s']";
 	String paymentOptionsLocator = "//*[@class='makeFlex column']//*[text()='%s']";
 	String optionsSelectboxLOcator = "//*[@class='font16' and text()='%s']";

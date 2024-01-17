@@ -29,23 +29,24 @@ public class HotelResultsPage extends BasePage{
 	By checkInDateLocator = By.id("search-widget-checkin-input");
 	By checkOutDateLocator = By.xpath("//*[@id='search-widget-calendar-element']/following-sibling::div[1]//input");
 	By guestDetailsLocator = By.xpath("//*[@id='search-widget-calendar-element']/following-sibling::div[2]//input");
-	By sortByOptionsLocator = By.xpath("//*[@class='SortingNewUIstyles__FilterName-sc-15ya9lx-1 gvdYst']");
+	By sortByOptionsLocator = By.xpath("//*[contains(@class,'SortingNewUIstyles__FilterName-sc-15ya9lx-1')]");
 	By filtersAvailable = By.xpath("//*[@class='CheckBoxListstyles__CheckBoxListText-sc-mib0do-6 eOQgmw']");
 	By hotelsLocator = By.xpath("//*[contains(@id,'htl_id_seo')]"); 
 	By clearFilterButtonLocator = By.xpath("//*[contains(@class,'Filtersstyles__Clear')]");
-	By hotelRatingsLocator = By.xpath("//*[contains(@id,'htl_id_seo')]//*[@class='ReviewAndRatingsstyles__AverageReviewText-sc-1nxmeoo-8 jzSqUD']");
+	By hotelRatingsLocator = By.xpath("//*[contains(@id,'htl_id_seo')]//*[contains(@class,'ReviewAndRatingsstyles__AverageReviewText-sc-1nxmeoo-8')]");
 	By tempElementsSearchBackgroundLocator1 = By.xpath("//*[contains(@class,'SearchResultsLoaderstyles__OverlayBackround')]");
 	By tempElementsSearchBackgroundLocator2 = By.xpath("//*[contains(text(),'LOADING THE BEST PRICES FOR YOU')]");
 	By tempElementsSearchBackgroundLocator3 = By.xpath("//*[contains(@class,'SearchResultsLoaderstyles__SearchResultsLoaderContainer')]");
-	By hotelPricesLocator = By.xpath("//*[contains(@id,'htl_id_seo')]//*[@class='HotelCardstyles__CurrentPrice-sc-1s80tyk-32 koAFXT']");
+	By hotelPricesLocator = By.xpath("//*[contains(@id,'htl_id_seo')]//*[contains(@class,'HotelCardstyles__CurrentPrice-sc-1s80tyk-32')]");
 	By hotelParentDivLocator = By.xpath("//*[@class='infinite-scroll-component ']");
 	By hotelDivLocator = By.xpath("//*[contains(@id,'htl_id_seo')]");
 	
-	String filtersLocator = "//*[contains(text(),'%s') and @class='CheckBoxListstyles__StyledDiv-sc-mib0do-4 iwpUbf']/ancestor::*[@class='dwebCommonstyles__CenteredSpaceWrap-sc-112ty3f-0 eHRHNU']/following-sibling::*";
+//	String filtersLocator = "//*[contains(text(),'%s') and contains(@class,'CheckBoxListstyles__StyledDiv-sc-mib0do-4')]/ancestor::*[contains(@class,'dwebCommonstyles__CenteredSpaceWrap-sc-112ty3f-0')]/following-sibling::*";
+	String filtersLocator = "//*[contains(text(),'%s') and contains(@class,'CheckBoxListstyles__StyledDiv')]/ancestor::*[contains(@class,'dwebCommonstyles__CenteredSpaceWrap-sc-112ty3f-0')]/following-sibling::*";
 	String hotelIndividualElementLocator = "//*[contains(@id,'htl_id_seo')][%d]";
-	String hotelIndividualNamesLocator = "//*[contains(@id,'htl_id_seo')][%d]//*[@class='dwebCommonstyles__SmallSectionHeader-sc-112ty3f-10 kJLbNT']";
-	String hotelIndividualPriceLocator = "//*[contains(@id,'htl_id_seo')][%d]//*[@class='ReviewAndRatingsstyles__AverageReviewText-sc-1nxmeoo-8 jzSqUD']";
-	String hotelIndividualRatingLocator = "//*[contains(@id,'htl_id_seo')][%d]//*[@class='HotelCardstyles__CurrentPrice-sc-1s80tyk-32 koAFXT']";
+	String hotelIndividualNamesLocator = "//*[contains(@id,'htl_id_seo')][%d]//*[contains(@class,'dwebCommonstyles__SmallSectionHeader-sc-112ty3f-10')]";
+	String hotelIndividualPriceLocator = "//*[contains(@id,'htl_id_seo')][%d]//*[contains(@class,'ReviewAndRatingsstyles__AverageReviewText-sc-1nxmeoo-8')]";
+	String hotelIndividualRatingLocator = "//*[contains(@id,'htl_id_seo')][%d]//*[contains(@class,'HotelCardstyles__CurrentPrice-sc-1s80tyk-32')]";
 	
 	WebElement whereInputbox;
 	WebElement checkInDateInputbox;

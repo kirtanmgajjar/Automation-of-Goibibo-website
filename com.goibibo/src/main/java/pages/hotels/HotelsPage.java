@@ -44,7 +44,7 @@ public class HotelsPage extends BasePage{
 	
 	String countryTypeLocator = "//input[@name='CountryType']/following-sibling::*[text()='%s']";
 	String requiredDateLocator = "//*[@data-testid='date_li_%d_%d_%d']";
-	String childrenAgeSelectBoxMenuLocator = "//*[@class='PaxWidgetstyles__ChildDropdownWrap-sc-gv3w6r-9 cuOfFa']/li[text()='%d']";
+	String childrenAgeSelectBoxMenuLocator = "//*[contains(@class,'PaxWidgetstyles__ChildDropdownWrap-sc-gv3w6r-9')]/li[text()='%d']";
 	
 	
 	WebElement country;
