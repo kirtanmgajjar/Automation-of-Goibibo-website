@@ -1,7 +1,5 @@
 package allTest;
 
-import java.text.ParseException;
-
 import org.testng.annotations.CustomAttribute;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -22,6 +20,7 @@ public class FlightTest extends BaseClass {
 	String billingCity = "Mumbai";
 	String billingPincode = "654321";
 	String billingAddress = "abc,Efg,Hij";
+	String month = "April 2024";
 	
 	
 	@Test(testName = "Navigation to Hotel page", description = "To validate if Flight menu button is diaplyed and is clickable",
@@ -63,8 +62,8 @@ attributes = {@CustomAttribute(name="passMessage",values={"A drop drown is displ
 attributes = {@CustomAttribute(name="passMessage",values={"The option is clicked"})})
 	public void verifyDestinationCity()
 	{
-		fp.selectCity("Ranchi");
-		fp.verifyToCity("Ranchi");
+		fp.selectCity("New Delhi");
+		fp.verifyToCity("New Delhi");
 	}
 	
 	@Test(testName = "Verification of Date Button", description = "To verify Departure date button is clickable", 
@@ -78,15 +77,15 @@ attributes = {@CustomAttribute(name="passMessage",values={"A drop down calendar 
 	@Test(testName = "Verification of Cheap Fares", description = "To verify fare displayed is lowest for the day", 
 			dependsOnMethods = "verifyDateBtn",
 attributes = {@CustomAttribute(name="passMessage",values={"The date is selected and is displayed"})})
-	public void validationOfLowestFares() throws ParseException
+	public void validationOfLowestFares() throws Exception
 	{
-		fp.selectMonth("March 2024");
-		fp.randomDateSel("March 2024");
+		fp.selectMonth(month);
+		fp.randomDateSel(month);
 		fp.travellerDetails("Economy");
 		fp.searchFlightBtn();
 		chpFare = fr.getChpFare();
 		driverLocal.get().navigate().back();
-		fp.lowestFareCheck(chpFare);
+		fp.lowestFareCheck(chpFare,month);
 	}
 	
 	@Test(testName = "Selecting lowest fare date", description = "To verify user is able to select date from Calendar for the lowest price", 
@@ -94,7 +93,7 @@ attributes = {@CustomAttribute(name="passMessage",values={"The date is selected 
 attributes = {@CustomAttribute(name="passMessage",values={"A dropdown is displayed and final details is displayed"})})
 	public void lowestDateSelection()
 	{
-		fp.selectDate("March 2024");
+		fp.selectDate(month);
 	}
 	
 	@Test(testName = "Traveller Details", description = "To verify user is able to add details in Travellers and class menu",
@@ -214,7 +213,7 @@ attributes = {@CustomAttribute(name="passMessage",values={"User is redirected to
 	@DataProvider
 	public String[][] passengerDetails()
 	{
-		String[][] data = {{"sdsds","560078","Odisha","MALE","Ram","Kumar","boy3452@gmail.com","91","7867389223","Bengaluru","Ranchi"}};
+		String[][] data = {{"sdsds","560078","Odisha","MALE","Ram","Kumar","boy3452@gmail.com","91","7867389223","Bengaluru","New Delhi"}};
 		return data;
 	}
 

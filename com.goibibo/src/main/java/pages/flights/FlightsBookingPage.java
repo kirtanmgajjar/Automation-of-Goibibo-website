@@ -29,7 +29,7 @@ public class FlightsBookingPage extends BasePage{
 	By errorMessageLocator = By.className("redText");
 	
 	
-	String stateSelectLocator = "//*[@class='sc-gmPhUn bVtUiH' and text()='%s']";
+	String stateSelectLocator = "//*[@class='sc-gmPhUn kqqXIc' and text()='%s']";
 	
 	WebElement modalBox;
 	
@@ -94,6 +94,7 @@ public class FlightsBookingPage extends BasePage{
 	}
 	public void clickProceedToPayment()
 	{
+		//wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("dweb-commonstyles__Modal-sc-13fxsy5-9")))).findElement(By.tagName("button")).click();;
 		driver.findElement(trpSecLoc).click();
 		driver.findElement(proceedPayLoc).click();
 		try
@@ -105,8 +106,9 @@ public class FlightsBookingPage extends BasePage{
 		{
 			
 		}
-		driver.findElement(By.xpath("//*[contains(@class,'reviewTravellerOverlaystyles__RtdCorrBtn')]")).click();
 		driver.findElement(proceedPayLoc).click();
+		driver.findElement(By.xpath("//*[contains(@class,'reviewTravellerOverlaystyles__RtdCorrBtn')]")).click();
+		//driver.findElement(proceedPayLoc).click();
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(skpPayLoc)));
 		driver.findElement(skpPayLoc).click();
 		modalBox = driver.findElement(modalBoxLoc);

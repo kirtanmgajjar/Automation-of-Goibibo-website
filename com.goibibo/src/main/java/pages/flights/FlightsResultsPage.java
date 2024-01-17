@@ -17,7 +17,7 @@ public class FlightsResultsPage extends BasePage{
 
 	By filAppLoc = By.xpath("(//div[contains(@class,'__SortTab-')])[4]/div[1]/*");
 	By disFareLoc = By.xpath("(//div[contains(@class,'uistyles__Price-')])[1]");
-	By chpFlightDetails = By.xpath("(//*[contains(@class,'uistyles__CardWrap')])[1]");
+	By chpFlightDetails = By.xpath("(//*[contains(@class,'uistyles__CardWrap')])[3]");
 	By viewFareLoc = By.xpath("(//*[contains(@class,'BookButton')])[1]");
 	By selFareLoc = By.xpath("(//input[@type='button'])[1]");
 	By msgLoc = By.xpath("(//*[contains(@class,'flight-reviewstyles__Container')])[1]");

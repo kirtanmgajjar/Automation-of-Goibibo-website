@@ -121,13 +121,13 @@ public class FlightsPage extends BasePage {
 															}
 															return null;
 														}).toList();
-			wait.until(ExpectedConditions.presenceOfElementLocated(fare));
 			if(displayedMonths.get(1).compareTo(userMonth)<0)
-				calenderRightArrow.click();
+				wait.until(ExpectedConditions.visibilityOf(calenderRightArrow)).click();
 			else if(displayedMonths.get(0).compareTo(userMonth)>0)
-				calenderLeftArrow.click();
+				wait.until(ExpectedConditions.visibilityOf(calenderLeftArrow)).click();
 
 		}while(!displayedMonths.contains(userMonth));
+		wait.until(ExpectedConditions.presenceOfElementLocated(fare));
 		assertTrue(displayedMonths.contains(userMonth));
 	}
 	
@@ -140,10 +140,11 @@ public class FlightsPage extends BasePage {
 	}
 	
 	
-	public void lowestFareCheck(int chpFare)
+	public void lowestFareCheck(int chpFare,String month) throws Exception
 	{
 		wait.until(ExpectedConditions.presenceOfElementLocated(dateLoc));
 		driver.findElement(dateLoc).click();
+		selectMonth(month);
 		wait.until(ExpectedConditions.presenceOfElementLocated(fare));
 		assertEquals(chpFare, Integer.parseInt(driver.findElement(randDtFare).getText().replace(",", "")));
 	}
