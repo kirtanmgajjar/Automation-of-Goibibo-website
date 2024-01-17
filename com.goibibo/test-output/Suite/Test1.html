@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/3/13</td>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 17 11:54:27 IST 2024</td>
+<td>Started on:</td><td>Wed Jan 17 16:32:49 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>42 seconds (42393 ms)</td>
+<tr><td>Total time:</td><td>59 seconds (59549 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,197 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='allTest.HotelsTest.verifySortingOptions()'><b>verifySortingOptions</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the functionality of the sorting options<br>Parameters: Price(Low to High)</td>
-<td>
-<a href="#attributes-672493939" onClick='toggleBox("attributes-672493939", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-672493939"></a><div class='log' id="attributes-672493939">
-name: passMessage, value:[The hotels displayed are sorted correctly]<br></div></td><td><div><pre>java.lang.IndexOutOfBoundsException: Index: 1
-	at java.base/java.util.Collections$EmptyList.get(Collections.java:4586)
-	at pages.hotels.HotelResultsPage.sortBy(HotelResultsPage.java:118)
-	at allTest.HotelsTest.verifySortingOptions(HotelsTest.java:175)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace672493939", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace672493939'><pre>java.lang.IndexOutOfBoundsException: Index: 1
-	at java.base/java.util.Collections$EmptyList.get(Collections.java:4586)
-	at pages.hotels.HotelResultsPage.sortBy(HotelResultsPage.java:118)
-	at allTest.HotelsTest.verifySortingOptions(HotelsTest.java:175)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>7</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.verifySortingOptions()'><b>verifySortingOptions</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the functionality of the sorting options<br>Parameters: Price(High to Low)</td>
-<td>
-<a href="#attributes-2146285461" onClick='toggleBox("attributes-2146285461", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-2146285461"></a><div class='log' id="attributes-2146285461">
-name: passMessage, value:[The hotels displayed are sorted correctly]<br></div></td><td><div><pre>java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:385)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at pages.hotels.HotelResultsPage.sortBy(HotelResultsPage.java:115)
-	at allTest.HotelsTest.verifySortingOptions(HotelsTest.java:175)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2146285461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2146285461'><pre>java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
-	at java.base/java.util.Objects.checkIndex(Objects.java:385)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at pages.hotels.HotelResultsPage.sortBy(HotelResultsPage.java:115)
-	at allTest.HotelsTest.verifySortingOptions(HotelsTest.java:175)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>15</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.verifySortingOptions()'><b>verifySortingOptions</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the functionality of the sorting options<br>Parameters: Customer Ratings</td>
-<td>
-<a href="#attributes-2053647669" onClick='toggleBox("attributes-2053647669", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-2053647669"></a><div class='log' id="attributes-2053647669">
-name: passMessage, value:[The hotels displayed are sorted correctly]<br></div></td><td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=118.0.5993.71)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [304adedee35acb146eb2292390249596, findElements {using=xpath, value=//*[@class=&apos;SortingNewUIstyles__FilterName-sc-15ya9lx-1 gvdYst&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57173/devtoo..., se:cdpVersion: 118.0.5993.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 304adedee35acb146eb2292390249596
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:362)
-	at pages.hotels.HotelResultsPage.sortBy(HotelResultsPage.java:110)
-	at allTest.HotelsTest.verifySortingOptions(HotelsTest.java:175)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2053647669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2053647669'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=118.0.5993.71)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [304adedee35acb146eb2292390249596, findElements {using=xpath, value=//*[@class=&apos;SortingNewUIstyles__FilterName-sc-15ya9lx-1 gvdYst&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57173}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57173/devtoo..., se:cdpVersion: 118.0.5993.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 304adedee35acb146eb2292390249596
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:362)
-	at pages.hotels.HotelResultsPage.sortBy(HotelResultsPage.java:110)
-	at allTest.HotelsTest.verifySortingOptions(HotelsTest.java:175)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -267,555 +76,248 @@ Session ID: 304adedee35acb146eb2292390249596
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='allTest.HotelsTest.verify0AdultAdd()'><b>verify0AdultAdd</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to enter 0 adult in the Adults field</td>
-<td>
-<a href="#attributes-2083004088" onClick='toggleBox("attributes-2083004088", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-2083004088"></a><div class='log' id="attributes-2083004088">
-name: passMessage, value:[The alert is displayed and &apos;Minimum 1 adult is required&apos; message is displayed]<br></div></td><td></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.validationOfAdultsField()'><b>validationOfAdultsField</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to select the required number of adults</td>
-<td>
-<a href="#attributes-2051889196" onClick='toggleBox("attributes-2051889196", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-2051889196"></a><div class='log' id="attributes-2051889196">
-name: passMessage, value:[The dropdown menu appears and the selected number of adults is displayed in the field]<br></div></td><td></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
 <td title='allTest.HotelsTest.navigateToHotelsPage()'><b>navigateToHotelsPage</b><br>Test class: allTest.HotelsTest<br>Test method: To validate if 'Hotel' menu button is displayed and clickable</td>
 <td>
-<a href="#attributes-989321301" onClick='toggleBox("attributes-989321301", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+<a href="#attributes-1147545255" onClick='toggleBox("attributes-1147545255", this, "Show attributes", "Hide attributes");'>Show attributes</a>
 
-<a href="#attributes-989321301"></a><div class='log' id="attributes-989321301">
+<a href="#attributes-1147545255"></a><div class='log' id="attributes-1147545255">
 name: passMessage, value:[User is redirected to Hotels web page]<br></div></td><td></td>
+<td>2</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.verifySortingOptions()'><b>verifySortingOptions</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the functionality of the sorting options<br>Parameters: Price(High to Low)</td>
+<td>
+<a href="#attributes-1019714562" onClick='toggleBox("attributes-1019714562", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-1019714562"></a><div class='log' id="attributes-1019714562">
+name: passMessage, value:[The hotels displayed are sorted correctly]<br></div></td><td></td>
 <td>3</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.verify0RoomAdd()'><b>verify0RoomAdd</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to enter 0 room in the Rooms field</td>
-<td>
-<a href="#attributes-682182987" onClick='toggleBox("attributes-682182987", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-682182987"></a><div class='log' id="attributes-682182987">
-name: passMessage, value:[The alert is displayed and &apos;Minimum 1 is required&apos; message is displayed]<br></div></td><td></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.validationOfChildrenField()'><b>validationOfChildrenField</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to select the required number of children and should be able to select the age for each of the children added</td>
-<td>
-<a href="#attributes-95553286" onClick='toggleBox("attributes-95553286", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-95553286"></a><div class='log' id="attributes-95553286">
-name: passMessage, value:[The dropdown menu appears and the selected number of children is added and the age is able to gets selected for each of them]<br></div></td><td></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.validationOfRoomsField()'><b>validationOfRoomsField</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to select the required number of rooms</td>
-<td>
-<a href="#attributes-1472200981" onClick='toggleBox("attributes-1472200981", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-1472200981"></a><div class='log' id="attributes-1472200981">
-name: passMessage, value:[The dropdown menu appears and the selected number of rooms is displayed in the field]<br></div></td><td></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.validationOfWhereSearchfield()'><b>validationOfWhereSearchfield</b><br>Test class: allTest.HotelsTest<br>Test method: To validate the functionality of 'Where' search box to be able to take input and is able to select the required location</td>
-<td>
-<a href="#attributes-275609562" onClick='toggleBox("attributes-275609562", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-275609562"></a><div class='log' id="attributes-275609562">
-name: passMessage, value:[A dropdown is displayed showing locations in Goa and the chosen location is displayed in the &apos;Where&apos; field]<br></div></td><td></td>
-<td>1</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.validationOfRadioButtons()'><b>validationOfRadioButtons</b><br>Test class: allTest.HotelsTest<br>Test method: To validate the working of radio buttons</td>
-<td>
-<a href="#attributes-1217883757" onClick='toggleBox("attributes-1217883757", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-1217883757"></a><div class='log' id="attributes-1217883757">
-name: passMessage, value:[India radio button is selected]<br></div></td><td></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.validationOfSearchField()'><b>validationOfSearchField</b><br>Test class: allTest.HotelsTest<br>Test method: To validate the functionality of Search button</td>
-<td>
-<a href="#attributes-1402211887" onClick='toggleBox("attributes-1402211887", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-1402211887"></a><div class='log' id="attributes-1402211887">
-name: passMessage, value:[User is redirected to hotels list webpage]<br></div></td><td></td>
-<td>1</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.verifySearchCriteria()'><b>verifySearchCriteria</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the hotel search criteria details in the hotel results page</td>
-<td>
-<a href="#attributes-95552255" onClick='toggleBox("attributes-95552255", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-95552255"></a><div class='log' id="attributes-95552255">
-name: passMessage, value:[The details displayed in the hotel results page matches with the details used to search the hotels]<br></div></td><td></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.validationOfDateFields()'><b>validationOfDateFields</b><br>Test class: allTest.HotelsTest<br>Test method: To validate the functionality of date fields to be able select required dates</td>
-<td>
-<a href="#attributes-406265225" onClick='toggleBox("attributes-406265225", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-406265225"></a><div class='log' id="attributes-406265225">
-name: passMessage, value:[The calender box appears and the selected &apos;Check In&apos; and &apos;Check Out&apos; dates is displayed in the respective fields]<br></div></td><td></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
 <tr>
 <td title='allTest.HotelsTest.verifyCustomerRatingFilter()'><b>verifyCustomerRatingFilter</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the functionality of Rating filters</td>
 <td>
-<a href="#attributes-1042366725" onClick='toggleBox("attributes-1042366725", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+<a href="#attributes-1247938090" onClick='toggleBox("attributes-1247938090", this, "Show attributes", "Hide attributes");'>Show attributes</a>
 
-<a href="#attributes-1042366725"></a><div class='log' id="attributes-1042366725">
-name: passMessage, value:[The hotel results shows the hotels having rating above 4]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyCustomerRatingFilter() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyPriceFilter() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1042366725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1042366725'><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyCustomerRatingFilter() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyPriceFilter() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.verifyHotelSelection()'><b>verifyHotelSelection</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to select hotel and is redirected to room booking page</td>
-<td>
-<a href="#attributes-26741311" onClick='toggleBox("attributes-26741311", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-26741311"></a><div class='log' id="attributes-26741311">
-name: passMessage, value:[User is redirected to that specific hotel webpage to choose room type]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyHotelSelection() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyCustomerRatingFilter() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26741311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace26741311'><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyHotelSelection() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyCustomerRatingFilter() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.verifyPriceSummary()'><b>verifyPriceSummary</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the displayed information of price summary</td>
-<td>
-<a href="#attributes-1738396212" onClick='toggleBox("attributes-1738396212", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-1738396212"></a><div class='log' id="attributes-1738396212">
-name: passMessage, value:[The price summary is correct based on the data displayed in the Room Booking page]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyPriceSummary() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyOfferCodeSelection() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1738396212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1738396212'><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyPriceSummary() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyOfferCodeSelection() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.verifyPriceFilter()'><b>verifyPriceFilter</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the functionality of Price filters</td>
-<td>
-<a href="#attributes-1603114855" onClick='toggleBox("attributes-1603114855", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-1603114855"></a><div class='log' id="attributes-1603114855">
-name: passMessage, value:[The hotel results shows the hotels having amount between 2001 and 4000]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyPriceFilter() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifySortingOptions() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1603114855", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1603114855'><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyPriceFilter() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifySortingOptions() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
+<a href="#attributes-1247938090"></a><div class='log' id="attributes-1247938090">
+name: passMessage, value:[The hotel results shows the hotels having rating above 4]<br></div></td><td></td>
+<td>2</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
 <tr>
 <td title='allTest.HotelsTest.verifyOfferCodeSelection()'><b>verifyOfferCodeSelection</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if the offer code gets selected and gets applied in the price summary</td>
 <td>
-<a href="#attributes-1731406622" onClick='toggleBox("attributes-1731406622", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+<a href="#attributes-648346093" onClick='toggleBox("attributes-648346093", this, "Show attributes", "Hide attributes");'>Show attributes</a>
 
-<a href="#attributes-1731406622"></a><div class='log' id="attributes-1731406622">
-name: passMessage, value:[The selected offer code gets selected and highlighted and the offer code is applied in the price summary]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyOfferCodeSelection() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.validateSearchCriteria() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1731406622", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1731406622'><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyOfferCodeSelection() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.validateSearchCriteria() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
+<a href="#attributes-648346093"></a><div class='log' id="attributes-648346093">
+name: passMessage, value:[The selected offer code gets selected and highlighted and the offer code is applied in the price summary]<br></div></td><td></td>
+<td>1</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
 <tr>
-<td title='allTest.HotelsTest.verifyCardPaymentOption()'><b>verifyCardPaymentOption</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to choose 'Credit/Debit/ATM Card' option</td>
+<td title='allTest.HotelsTest.validationOfSearchField()'><b>validationOfSearchField</b><br>Test class: allTest.HotelsTest<br>Test method: To validate the functionality of Search button</td>
 <td>
-<a href="#attributes-1032656803" onClick='toggleBox("attributes-1032656803", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+<a href="#attributes-930641076" onClick='toggleBox("attributes-930641076", this, "Show attributes", "Hide attributes");'>Show attributes</a>
 
-<a href="#attributes-1032656803"></a><div class='log' id="attributes-1032656803">
-name: passMessage, value:[Enter card details message is displayed]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyCardPaymentOption() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyDetailsOnPaymentGateway() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1032656803", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1032656803'><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyCardPaymentOption() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyDetailsOnPaymentGateway() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
-<tr>
-<td title='allTest.HotelsTest.verifyPaymentButton()'><b>verifyPaymentButton</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the functionality of 'Proceed To Payment Options' button</td>
-<td>
-<a href="#attributes-1279124366" onClick='toggleBox("attributes-1279124366", this, "Show attributes", "Hide attributes");'>Show attributes</a>
-
-<a href="#attributes-1279124366"></a><div class='log' id="attributes-1279124366">
-name: passMessage, value:[User is redirected to payment gateway to complete the payment]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyPaymentButton() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyRequiredFields() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1279124366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1279124366'><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyPaymentButton() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyRequiredFields() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
+<a href="#attributes-930641076"></a><div class='log' id="attributes-930641076">
+name: passMessage, value:[User is redirected to hotels list webpage]<br></div></td><td></td>
+<td>1</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
 <tr>
 <td title='allTest.HotelsTest.verifyDetailsOnPaymentGateway()'><b>verifyDetailsOnPaymentGateway</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the details on the Payment Gateway page</td>
 <td>
-<a href="#attributes-530402062" onClick='toggleBox("attributes-530402062", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+<a href="#attributes-391333725" onClick='toggleBox("attributes-391333725", this, "Show attributes", "Hide attributes");'>Show attributes</a>
 
-<a href="#attributes-530402062"></a><div class='log' id="attributes-530402062">
-name: passMessage, value:[All the details displayed is correct]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyDetailsOnPaymentGateway() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyPaymentButton() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace530402062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace530402062'><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyDetailsOnPaymentGateway() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyPaymentButton() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<a href="#attributes-391333725"></a><div class='log' id="attributes-391333725">
+name: passMessage, value:[All the details displayed is correct]<br></div></td><td></td>
 <td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
 <tr>
-<td title='allTest.HotelsTest.verifyRequiredFields()'><b>verifyRequiredFields</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to fill all the required guest details</td>
+<td title='allTest.HotelsTest.validationOfRoomsField()'><b>validationOfRoomsField</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to select the required number of rooms</td>
 <td>
-<a href="#attributes-509522442" onClick='toggleBox("attributes-509522442", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+<a href="#attributes-1566285515" onClick='toggleBox("attributes-1566285515", this, "Show attributes", "Hide attributes");'>Show attributes</a>
 
-<a href="#attributes-509522442"></a><div class='log' id="attributes-509522442">
-name: passMessage, value:[User is able to fill details in the required fields]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyRequiredFields() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyPriceSummary() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace509522442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace509522442'><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyRequiredFields() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyPriceSummary() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<a href="#attributes-1566285515"></a><div class='log' id="attributes-1566285515">
+name: passMessage, value:[The dropdown menu appears and the selected number of rooms is displayed in the field]<br></div></td><td></td>
 <td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
 <tr>
-<td title='allTest.HotelsTest.verifyCardDetailsFields()'><b>verifyCardDetailsFields</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to enter credit card details</td>
+<td title='allTest.HotelsTest.verifySearchCriteria()'><b>verifySearchCriteria</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the hotel search criteria details in the hotel results page</td>
 <td>
-<a href="#attributes-2138697198" onClick='toggleBox("attributes-2138697198", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+<a href="#attributes-1918121287" onClick='toggleBox("attributes-1918121287", this, "Show attributes", "Hide attributes");'>Show attributes</a>
 
-<a href="#attributes-2138697198"></a><div class='log' id="attributes-2138697198">
-name: passMessage, value:[User is able to enter all required details]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyCardDetailsFields() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyCardPaymentOption() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2138697198", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2138697198'><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyCardDetailsFields() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyCardPaymentOption() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<a href="#attributes-1918121287"></a><div class='log' id="attributes-1918121287">
+name: passMessage, value:[The details displayed in the hotel results page matches with the details used to search the hotels]<br></div></td><td></td>
 <td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.verifyPriceSummary()'><b>verifyPriceSummary</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the displayed information of price summary</td>
+<td>
+<a href="#attributes-79488555" onClick='toggleBox("attributes-79488555", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-79488555"></a><div class='log' id="attributes-79488555">
+name: passMessage, value:[The price summary is correct based on the data displayed in the Room Booking page]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.verifyPaymentButton()'><b>verifyPaymentButton</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the functionality of 'Proceed To Payment Options' button</td>
+<td>
+<a href="#attributes-558984328" onClick='toggleBox("attributes-558984328", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-558984328"></a><div class='log' id="attributes-558984328">
+name: passMessage, value:[User is redirected to payment gateway to complete the payment]<br></div></td><td></td>
+<td>3</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
 <tr>
 <td title='allTest.HotelsTest.verifyPayWithoutSavingCardButton()'><b>verifyPayWithoutSavingCardButton</b><br>Test class: allTest.HotelsTest<br>Test method: To verify functionality of 'Pay without saving card' option</td>
 <td>
-<a href="#attributes-1229143192" onClick='toggleBox("attributes-1229143192", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+<a href="#attributes-2079100080" onClick='toggleBox("attributes-2079100080", this, "Show attributes", "Hide attributes");'>Show attributes</a>
 
-<a href="#attributes-1229143192"></a><div class='log' id="attributes-1229143192">
-name: passMessage, value:[Error message is displayed as &apos;We are unable to process transactions for this user/card&apos;]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyPayWithoutSavingCardButton() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyCardDetailsFields() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1229143192", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1229143192'><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyPayWithoutSavingCardButton() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyCardDetailsFields() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
+<a href="#attributes-2079100080"></a><div class='log' id="attributes-2079100080">
+name: passMessage, value:[Error message is displayed as &apos;We are unable to process transactions for this user/card&apos;]<br></div></td><td></td>
+<td>1</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.verifyHotelSelection()'><b>verifyHotelSelection</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to select hotel and is redirected to room booking page</td>
+<td>
+<a href="#attributes-508122132" onClick='toggleBox("attributes-508122132", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-508122132"></a><div class='log' id="attributes-508122132">
+name: passMessage, value:[User is redirected to that specific hotel webpage to choose room type]<br></div></td><td></td>
+<td>2</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.verifyPriceFilter()'><b>verifyPriceFilter</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the functionality of Price filters</td>
+<td>
+<a href="#attributes-1009313206" onClick='toggleBox("attributes-1009313206", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-1009313206"></a><div class='log' id="attributes-1009313206">
+name: passMessage, value:[The hotel results shows the hotels having amount between 2001 and 4000]<br></div></td><td></td>
+<td>3</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.verifySortingOptions()'><b>verifySortingOptions</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the functionality of the sorting options<br>Parameters: Price(Low to High)</td>
+<td>
+<a href="#attributes-911201454" onClick='toggleBox("attributes-911201454", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-911201454"></a><div class='log' id="attributes-911201454">
+name: passMessage, value:[The hotels displayed are sorted correctly]<br></div></td><td></td>
+<td>1</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
 <tr>
 <td title='allTest.HotelsTest.validateSearchCriteria()'><b>validateSearchCriteria</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the search criteria details on the hotel info page</td>
 <td>
-<a href="#attributes-966005897" onClick='toggleBox("attributes-966005897", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+<a href="#attributes-257268852" onClick='toggleBox("attributes-257268852", this, "Show attributes", "Hide attributes");'>Show attributes</a>
 
-<a href="#attributes-966005897"></a><div class='log' id="attributes-966005897">
-name: passMessage, value:[The search criteria displayed matches with the search criteria used for the searching the hotel]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.validateSearchCriteria() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyRoomOptionsSelection() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace966005897", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace966005897'><pre>java.lang.Throwable: Method allTest.HotelsTest.validateSearchCriteria() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyRoomOptionsSelection() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<a href="#attributes-257268852"></a><div class='log' id="attributes-257268852">
+name: passMessage, value:[The search criteria displayed matches with the search criteria used for the searching the hotel]<br></div></td><td></td>
 <td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.verifySortingOptions()'><b>verifySortingOptions</b><br>Test class: allTest.HotelsTest<br>Test method: To verify the functionality of the sorting options<br>Parameters: Customer Ratings</td>
+<td>
+<a href="#attributes-204339470" onClick='toggleBox("attributes-204339470", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-204339470"></a><div class='log' id="attributes-204339470">
+name: passMessage, value:[The hotels displayed are sorted correctly]<br></div></td><td></td>
+<td>2</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.verifyCardPaymentOption()'><b>verifyCardPaymentOption</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to choose 'Credit/Debit/ATM Card' option</td>
+<td>
+<a href="#attributes-1735770321" onClick='toggleBox("attributes-1735770321", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-1735770321"></a><div class='log' id="attributes-1735770321">
+name: passMessage, value:[Enter card details message is displayed]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.validationOfWhereSearchfield()'><b>validationOfWhereSearchfield</b><br>Test class: allTest.HotelsTest<br>Test method: To validate the functionality of 'Where' search box to be able to take input and is able to select the required location</td>
+<td>
+<a href="#attributes-254952533" onClick='toggleBox("attributes-254952533", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-254952533"></a><div class='log' id="attributes-254952533">
+name: passMessage, value:[A dropdown is displayed showing locations in Goa and the chosen location is displayed in the &apos;Where&apos; field]<br></div></td><td></td>
+<td>1</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.verifyRequiredFields()'><b>verifyRequiredFields</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to fill all the required guest details</td>
+<td>
+<a href="#attributes-302207211" onClick='toggleBox("attributes-302207211", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-302207211"></a><div class='log' id="attributes-302207211">
+name: passMessage, value:[User is able to fill details in the required fields]<br></div></td><td></td>
+<td>1</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.validationOfChildrenField()'><b>validationOfChildrenField</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to select the required number of children and should be able to select the age for each of the children added</td>
+<td>
+<a href="#attributes-1729045606" onClick='toggleBox("attributes-1729045606", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-1729045606"></a><div class='log' id="attributes-1729045606">
+name: passMessage, value:[The dropdown menu appears and the selected number of children is added and the age is able to gets selected for each of them]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.verifyCardDetailsFields()'><b>verifyCardDetailsFields</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to enter credit card details</td>
+<td>
+<a href="#attributes-1720332964" onClick='toggleBox("attributes-1720332964", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-1720332964"></a><div class='log' id="attributes-1720332964">
+name: passMessage, value:[User is able to enter all required details]<br></div></td><td></td>
+<td>1</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.verify0RoomAdd()'><b>verify0RoomAdd</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to enter 0 room in the Rooms field</td>
+<td>
+<a href="#attributes-153950082" onClick='toggleBox("attributes-153950082", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-153950082"></a><div class='log' id="attributes-153950082">
+name: passMessage, value:[The alert is displayed and &apos;Minimum 1 is required&apos; message is displayed]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.verify0AdultAdd()'><b>verify0AdultAdd</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to enter 0 adult in the Adults field</td>
+<td>
+<a href="#attributes-601520619" onClick='toggleBox("attributes-601520619", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-601520619"></a><div class='log' id="attributes-601520619">
+name: passMessage, value:[The alert is displayed and &apos;Minimum 1 adult is required&apos; message is displayed]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.validationOfRadioButtons()'><b>validationOfRadioButtons</b><br>Test class: allTest.HotelsTest<br>Test method: To validate the working of radio buttons</td>
+<td>
+<a href="#attributes-1280452839" onClick='toggleBox("attributes-1280452839", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-1280452839"></a><div class='log' id="attributes-1280452839">
+name: passMessage, value:[India radio button is selected]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.validationOfDateFields()'><b>validationOfDateFields</b><br>Test class: allTest.HotelsTest<br>Test method: To validate the functionality of date fields to be able select required dates</td>
+<td>
+<a href="#attributes-1261545224" onClick='toggleBox("attributes-1261545224", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-1261545224"></a><div class='log' id="attributes-1261545224">
+name: passMessage, value:[The calender box appears and the selected &apos;Check In&apos; and &apos;Check Out&apos; dates is displayed in the respective fields]<br></div></td><td></td>
+<td>0</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
 <tr>
 <td title='allTest.HotelsTest.verifyRoomOptionsSelection()'><b>verifyRoomOptionsSelection</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is view the availble room options and is able to book the required room option</td>
 <td>
-<a href="#attributes-1399550388" onClick='toggleBox("attributes-1399550388", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+<a href="#attributes-586722754" onClick='toggleBox("attributes-586722754", this, "Show attributes", "Hide attributes");'>Show attributes</a>
 
-<a href="#attributes-1399550388"></a><div class='log' id="attributes-1399550388">
-name: passMessage, value:[User is redirected to Room Info webpage]<br></div></td><td><div><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyRoomOptionsSelection() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyHotelSelection() on instance allTest.HotelsTest@710f4dc7]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1399550388", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1399550388'><pre>java.lang.Throwable: Method allTest.HotelsTest.verifyRoomOptionsSelection() on instance allTest.HotelsTest@710f4dc7 depends on not successfully finished methods 
-[allTest.HotelsTest.verifyHotelSelection() on instance allTest.HotelsTest@710f4dc7]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<a href="#attributes-586722754"></a><div class='log' id="attributes-586722754">
+name: passMessage, value:[User is redirected to Room Info webpage]<br></div></td><td></td>
+<td>3</td>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
+<tr>
+<td title='allTest.HotelsTest.validationOfAdultsField()'><b>validationOfAdultsField</b><br>Test class: allTest.HotelsTest<br>Test method: To verify if user is able to select the required number of adults</td>
+<td>
+<a href="#attributes-805536380" onClick='toggleBox("attributes-805536380", this, "Show attributes", "Hide attributes");'>Show attributes</a>
+
+<a href="#attributes-805536380"></a><div class='log' id="attributes-805536380">
+name: passMessage, value:[The dropdown menu appears and the selected number of adults is displayed in the field]<br></div></td><td></td>
 <td>0</td>
-<td>allTest.HotelsTest@710f4dc7</td></tr>
+<td>allTest.HotelsTest@1ff4931d</td></tr>
 </table><p>
 </body>
 </html>

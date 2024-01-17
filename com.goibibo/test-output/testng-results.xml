@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="27" passed="27" failed="0" skipped="0">
+<testng-results ignored="0" total="48" passed="48" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-17T16:30:08 IST" name="Default suite" finished-at="2024-01-17T16:31:02 IST" duration-ms="54353">
+  <suite started-at="2024-01-17T16:32:49 IST" name="Suite" finished-at="2024-01-17T16:36:46 IST" duration-ms="236871">
     <groups>
     </groups>
-    <test started-at="2024-01-17T16:30:08 IST" name="Default test" finished-at="2024-01-17T16:31:02 IST" duration-ms="54353">
+    <test started-at="2024-01-17T16:32:49 IST" name="Test1" finished-at="2024-01-17T16:33:49 IST" duration-ms="59549">
       <class name="allTest.HotelsTest">
-        <test-method is-config="true" signature="configurations()[pri:0, instance:allTest.HotelsTest@710f4dc7]" started-at="2024-01-17T16:30:08 IST" name="configurations" finished-at="2024-01-17T16:30:08 IST" duration-ms="23" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configurations -->
-        <test-method is-config="true" signature="configPages()[pri:0, instance:allTest.HotelsTest@710f4dc7]" started-at="2024-01-17T16:30:08 IST" name="configPages" finished-at="2024-01-17T16:30:15 IST" duration-ms="7151" status="PASS">
+        <test-method is-config="true" signature="configPages()[pri:0, instance:allTest.HotelsTest@1ff4931d]" started-at="2024-01-17T16:32:49 IST" name="configPages" finished-at="2024-01-17T16:33:04 IST" duration-ms="14313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configPages -->
-        <test-method signature="navigateToHotelsPage()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[User is redirected to Hotels web page]&gt;]" started-at="2024-01-17T16:30:15 IST" name="navigateToHotelsPage" description="To validate if &#039;Hotel&#039; menu button is displayed and clickable" finished-at="2024-01-17T16:30:19 IST" duration-ms="3450" status="PASS">
+        <test-method signature="navigateToHotelsPage()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[User is redirected to Hotels web page]&gt;]" started-at="2024-01-17T16:33:04 IST" name="navigateToHotelsPage" description="To validate if &#039;Hotel&#039; menu button is displayed and clickable" finished-at="2024-01-17T16:33:06 IST" duration-ms="2557" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -28,7 +24,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- navigateToHotelsPage -->
-        <test-method signature="validationOfRadioButtons()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[India radio button is selected]&gt;]" started-at="2024-01-17T16:30:19 IST" name="validationOfRadioButtons" description="To validate the working of radio buttons" finished-at="2024-01-17T16:30:20 IST" depends-on-methods="allTest.HotelsTest.navigateToHotelsPage" duration-ms="842" status="PASS">
+        <test-method signature="validationOfRadioButtons()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[India radio button is selected]&gt;]" started-at="2024-01-17T16:33:06 IST" name="validationOfRadioButtons" description="To validate the working of radio buttons" finished-at="2024-01-17T16:33:07 IST" depends-on-methods="allTest.HotelsTest.navigateToHotelsPage" duration-ms="833" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -41,7 +37,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- validationOfRadioButtons -->
-        <test-method signature="validationOfWhereSearchfield()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[A dropdown is displayed showing locations in Goa and the chosen location is displayed in the &#039;Where&#039; field]&gt;]" started-at="2024-01-17T16:30:20 IST" name="validationOfWhereSearchfield" description="To validate the functionality of &#039;Where&#039; search box to be able to take input and is able to select the required location" finished-at="2024-01-17T16:30:21 IST" depends-on-methods="allTest.HotelsTest.validationOfRadioButtons" duration-ms="1061" status="PASS">
+        <test-method signature="validationOfWhereSearchfield()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[A dropdown is displayed showing locations in Goa and the chosen location is displayed in the &#039;Where&#039; field]&gt;]" started-at="2024-01-17T16:33:07 IST" name="validationOfWhereSearchfield" description="To validate the functionality of &#039;Where&#039; search box to be able to take input and is able to select the required location" finished-at="2024-01-17T16:33:09 IST" depends-on-methods="allTest.HotelsTest.validationOfRadioButtons" duration-ms="1134" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -54,7 +50,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- validationOfWhereSearchfield -->
-        <test-method signature="validationOfDateFields()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The calender box appears and the selected &#039;Check In&#039; and &#039;Check Out&#039; dates is displayed in the respective fields]&gt;]" started-at="2024-01-17T16:30:21 IST" name="validationOfDateFields" description="To validate the functionality of date fields to be able select required dates" finished-at="2024-01-17T16:30:22 IST" depends-on-methods="allTest.HotelsTest.validationOfWhereSearchfield" duration-ms="459" status="PASS">
+        <test-method signature="validationOfDateFields()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The calender box appears and the selected &#039;Check In&#039; and &#039;Check Out&#039; dates is displayed in the respective fields]&gt;]" started-at="2024-01-17T16:33:09 IST" name="validationOfDateFields" description="To validate the functionality of date fields to be able select required dates" finished-at="2024-01-17T16:33:09 IST" depends-on-methods="allTest.HotelsTest.validationOfWhereSearchfield" duration-ms="522" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -67,7 +63,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- validationOfDateFields -->
-        <test-method signature="validationOfAdultsField()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The dropdown menu appears and the selected number of adults is displayed in the field]&gt;]" started-at="2024-01-17T16:30:22 IST" name="validationOfAdultsField" description="To verify if user is able to select the required number of adults" finished-at="2024-01-17T16:30:22 IST" depends-on-methods="allTest.HotelsTest.validationOfDateFields" duration-ms="294" status="PASS">
+        <test-method signature="validationOfAdultsField()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The dropdown menu appears and the selected number of adults is displayed in the field]&gt;]" started-at="2024-01-17T16:33:09 IST" name="validationOfAdultsField" description="To verify if user is able to select the required number of adults" finished-at="2024-01-17T16:33:10 IST" depends-on-methods="allTest.HotelsTest.validationOfDateFields" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -80,7 +76,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- validationOfAdultsField -->
-        <test-method signature="validationOfRoomsField()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The dropdown menu appears and the selected number of rooms is displayed in the field]&gt;]" started-at="2024-01-17T16:30:22 IST" name="validationOfRoomsField" description="To verify if user is able to select the required number of rooms" finished-at="2024-01-17T16:30:23 IST" depends-on-methods="allTest.HotelsTest.validationOfDateFields" duration-ms="319" status="PASS">
+        <test-method signature="validationOfRoomsField()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The dropdown menu appears and the selected number of rooms is displayed in the field]&gt;]" started-at="2024-01-17T16:33:10 IST" name="validationOfRoomsField" description="To verify if user is able to select the required number of rooms" finished-at="2024-01-17T16:33:10 IST" depends-on-methods="allTest.HotelsTest.validationOfDateFields" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -93,7 +89,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- validationOfRoomsField -->
-        <test-method signature="validationOfChildrenField()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The dropdown menu appears and the selected number of children is added and the age is able to gets selected for each of them]&gt;]" started-at="2024-01-17T16:30:23 IST" name="validationOfChildrenField" description="To verify if user is able to select the required number of children and should be able to select the age for each of the children added" finished-at="2024-01-17T16:30:23 IST" depends-on-methods="allTest.HotelsTest.validationOfAdultsField" duration-ms="740" status="PASS">
+        <test-method signature="validationOfChildrenField()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The dropdown menu appears and the selected number of children is added and the age is able to gets selected for each of them]&gt;]" started-at="2024-01-17T16:33:10 IST" name="validationOfChildrenField" description="To verify if user is able to select the required number of children and should be able to select the age for each of the children added" finished-at="2024-01-17T16:33:11 IST" depends-on-methods="allTest.HotelsTest.validationOfAdultsField" duration-ms="810" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -106,7 +102,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- validationOfChildrenField -->
-        <test-method signature="verify0RoomAdd()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The alert is displayed and &#039;Minimum 1 is required&#039; message is displayed]&gt;]" started-at="2024-01-17T16:30:24 IST" name="verify0RoomAdd" description="To verify if user is able to enter 0 room in the Rooms field" finished-at="2024-01-17T16:30:24 IST" depends-on-methods="allTest.HotelsTest.validationOfChildrenField" duration-ms="331" status="PASS">
+        <test-method signature="verify0RoomAdd()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The alert is displayed and &#039;Minimum 1 is required&#039; message is displayed]&gt;]" started-at="2024-01-17T16:33:11 IST" name="verify0RoomAdd" description="To verify if user is able to enter 0 room in the Rooms field" finished-at="2024-01-17T16:33:12 IST" depends-on-methods="allTest.HotelsTest.validationOfChildrenField" duration-ms="351" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -119,7 +115,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verify0RoomAdd -->
-        <test-method signature="verify0AdultAdd()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The alert is displayed and &#039;Minimum 1 adult is required&#039; message is displayed]&gt;]" started-at="2024-01-17T16:30:24 IST" name="verify0AdultAdd" description="To verify if user is able to enter 0 adult in the Adults field" finished-at="2024-01-17T16:30:25 IST" depends-on-methods="allTest.HotelsTest.verify0RoomAdd" duration-ms="368" status="PASS">
+        <test-method signature="verify0AdultAdd()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The alert is displayed and &#039;Minimum 1 adult is required&#039; message is displayed]&gt;]" started-at="2024-01-17T16:33:12 IST" name="verify0AdultAdd" description="To verify if user is able to enter 0 adult in the Adults field" finished-at="2024-01-17T16:33:12 IST" depends-on-methods="allTest.HotelsTest.verify0RoomAdd" duration-ms="339" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -132,7 +128,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verify0AdultAdd -->
-        <test-method signature="validationOfSearchField()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[User is redirected to hotels list webpage]&gt;]" started-at="2024-01-17T16:30:25 IST" name="validationOfSearchField" description="To validate the functionality of Search button" finished-at="2024-01-17T16:30:26 IST" depends-on-methods="allTest.HotelsTest.verify0AdultAdd" duration-ms="1111" status="PASS">
+        <test-method signature="validationOfSearchField()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[User is redirected to hotels list webpage]&gt;]" started-at="2024-01-17T16:33:13 IST" name="validationOfSearchField" description="To validate the functionality of Search button" finished-at="2024-01-17T16:33:14 IST" depends-on-methods="allTest.HotelsTest.verify0AdultAdd" duration-ms="1179" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -145,7 +141,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- validationOfSearchField -->
-        <test-method signature="verifySearchCriteria()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The details displayed in the hotel results page matches with the details used to search the hotels]&gt;]" started-at="2024-01-17T16:30:26 IST" name="verifySearchCriteria" description="To verify the hotel search criteria details in the hotel results page" finished-at="2024-01-17T16:30:27 IST" depends-on-methods="allTest.HotelsTest.validationOfSearchField" duration-ms="660" status="PASS">
+        <test-method signature="verifySearchCriteria()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The details displayed in the hotel results page matches with the details used to search the hotels]&gt;]" started-at="2024-01-17T16:33:14 IST" name="verifySearchCriteria" description="To verify the hotel search criteria details in the hotel results page" finished-at="2024-01-17T16:33:14 IST" depends-on-methods="allTest.HotelsTest.validationOfSearchField" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -158,7 +154,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifySearchCriteria -->
-        <test-method signature="verifySortingOptions(java.lang.String)[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The hotels displayed are sorted correctly]&gt;]" started-at="2024-01-17T16:30:27 IST" name="verifySortingOptions" description="To verify the functionality of the sorting options" data-provider="sortingOptionsAvailable" finished-at="2024-01-17T16:30:31 IST" depends-on-methods="allTest.HotelsTest.verifySearchCriteria" duration-ms="3956" status="PASS">
+        <test-method signature="verifySortingOptions(java.lang.String)[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The hotels displayed are sorted correctly]&gt;]" started-at="2024-01-17T16:33:15 IST" name="verifySortingOptions" description="To verify the functionality of the sorting options" data-provider="sortingOptionsAvailable" finished-at="2024-01-17T16:33:18 IST" depends-on-methods="allTest.HotelsTest.verifySearchCriteria" duration-ms="3516" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,7 +174,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifySortingOptions -->
-        <test-method signature="verifySortingOptions(java.lang.String)[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The hotels displayed are sorted correctly]&gt;]" started-at="2024-01-17T16:30:31 IST" name="verifySortingOptions" description="To verify the functionality of the sorting options" data-provider="sortingOptionsAvailable" finished-at="2024-01-17T16:30:34 IST" depends-on-methods="allTest.HotelsTest.verifySearchCriteria" duration-ms="2365" status="PASS">
+        <test-method signature="verifySortingOptions(java.lang.String)[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The hotels displayed are sorted correctly]&gt;]" started-at="2024-01-17T16:33:18 IST" name="verifySortingOptions" description="To verify the functionality of the sorting options" data-provider="sortingOptionsAvailable" finished-at="2024-01-17T16:33:20 IST" depends-on-methods="allTest.HotelsTest.verifySearchCriteria" duration-ms="1908" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -198,7 +194,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifySortingOptions -->
-        <test-method signature="verifySortingOptions(java.lang.String)[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The hotels displayed are sorted correctly]&gt;]" started-at="2024-01-17T16:30:34 IST" name="verifySortingOptions" description="To verify the functionality of the sorting options" data-provider="sortingOptionsAvailable" finished-at="2024-01-17T16:30:36 IST" depends-on-methods="allTest.HotelsTest.verifySearchCriteria" duration-ms="2270" status="PASS">
+        <test-method signature="verifySortingOptions(java.lang.String)[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The hotels displayed are sorted correctly]&gt;]" started-at="2024-01-17T16:33:21 IST" name="verifySortingOptions" description="To verify the functionality of the sorting options" data-provider="sortingOptionsAvailable" finished-at="2024-01-17T16:33:23 IST" depends-on-methods="allTest.HotelsTest.verifySearchCriteria" duration-ms="2094" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -218,7 +214,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifySortingOptions -->
-        <test-method signature="verifyPriceFilter()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The hotel results shows the hotels having amount between 2001 and 4000]&gt;]" started-at="2024-01-17T16:30:36 IST" name="verifyPriceFilter" description="To verify the functionality of Price filters" finished-at="2024-01-17T16:30:40 IST" depends-on-methods="allTest.HotelsTest.verifySortingOptions" duration-ms="3830" status="PASS">
+        <test-method signature="verifyPriceFilter()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The hotel results shows the hotels having amount between 2001 and 4000]&gt;]" started-at="2024-01-17T16:33:23 IST" name="verifyPriceFilter" description="To verify the functionality of Price filters" finished-at="2024-01-17T16:33:27 IST" depends-on-methods="allTest.HotelsTest.verifySortingOptions" duration-ms="3783" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -231,7 +227,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifyPriceFilter -->
-        <test-method signature="verifyCustomerRatingFilter()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The hotel results shows the hotels having rating above 4]&gt;]" started-at="2024-01-17T16:30:41 IST" name="verifyCustomerRatingFilter" description="To verify the functionality of Rating filters" finished-at="2024-01-17T16:30:43 IST" depends-on-methods="allTest.HotelsTest.verifyPriceFilter" duration-ms="2818" status="PASS">
+        <test-method signature="verifyCustomerRatingFilter()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The hotel results shows the hotels having rating above 4]&gt;]" started-at="2024-01-17T16:33:27 IST" name="verifyCustomerRatingFilter" description="To verify the functionality of Rating filters" finished-at="2024-01-17T16:33:29 IST" depends-on-methods="allTest.HotelsTest.verifyPriceFilter" duration-ms="2558" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -244,7 +240,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifyCustomerRatingFilter -->
-        <test-method signature="verifyHotelSelection()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[User is redirected to that specific hotel webpage to choose room type]&gt;]" started-at="2024-01-17T16:30:44 IST" name="verifyHotelSelection" description="To verify if user is able to select hotel and is redirected to room booking page" finished-at="2024-01-17T16:30:46 IST" depends-on-methods="allTest.HotelsTest.verifyCustomerRatingFilter" duration-ms="2741" status="PASS">
+        <test-method signature="verifyHotelSelection()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[User is redirected to that specific hotel webpage to choose room type]&gt;]" started-at="2024-01-17T16:33:30 IST" name="verifyHotelSelection" description="To verify if user is able to select hotel and is redirected to room booking page" finished-at="2024-01-17T16:33:33 IST" depends-on-methods="allTest.HotelsTest.verifyCustomerRatingFilter" duration-ms="2825" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -257,7 +253,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifyHotelSelection -->
-        <test-method signature="verifyRoomOptionsSelection()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[User is redirected to Room Info webpage]&gt;]" started-at="2024-01-17T16:30:47 IST" name="verifyRoomOptionsSelection" description="To verify if user is view the availble room options and is able to book the required room option" finished-at="2024-01-17T16:30:50 IST" depends-on-methods="allTest.HotelsTest.verifyHotelSelection" duration-ms="3744" status="PASS">
+        <test-method signature="verifyRoomOptionsSelection()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[User is redirected to Room Info webpage]&gt;]" started-at="2024-01-17T16:33:33 IST" name="verifyRoomOptionsSelection" description="To verify if user is view the availble room options and is able to book the required room option" finished-at="2024-01-17T16:33:37 IST" depends-on-methods="allTest.HotelsTest.verifyHotelSelection" duration-ms="3692" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -270,7 +266,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifyRoomOptionsSelection -->
-        <test-method signature="validateSearchCriteria()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The search criteria displayed matches with the search criteria used for the searching the hotel]&gt;]" started-at="2024-01-17T16:30:51 IST" name="validateSearchCriteria" description="To verify the search criteria details on the hotel info page" finished-at="2024-01-17T16:30:51 IST" depends-on-methods="allTest.HotelsTest.verifyRoomOptionsSelection" duration-ms="86" status="PASS">
+        <test-method signature="validateSearchCriteria()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The search criteria displayed matches with the search criteria used for the searching the hotel]&gt;]" started-at="2024-01-17T16:33:37 IST" name="validateSearchCriteria" description="To verify the search criteria details on the hotel info page" finished-at="2024-01-17T16:33:37 IST" depends-on-methods="allTest.HotelsTest.verifyRoomOptionsSelection" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -283,7 +279,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- validateSearchCriteria -->
-        <test-method signature="verifyOfferCodeSelection()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The selected offer code gets selected and highlighted and the offer code is applied in the price summary]&gt;]" started-at="2024-01-17T16:30:51 IST" name="verifyOfferCodeSelection" description="To verify if the offer code gets selected and gets applied in the price summary" finished-at="2024-01-17T16:30:52 IST" depends-on-methods="allTest.HotelsTest.validateSearchCriteria" duration-ms="975" status="PASS">
+        <test-method signature="verifyOfferCodeSelection()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The selected offer code gets selected and highlighted and the offer code is applied in the price summary]&gt;]" started-at="2024-01-17T16:33:37 IST" name="verifyOfferCodeSelection" description="To verify if the offer code gets selected and gets applied in the price summary" finished-at="2024-01-17T16:33:38 IST" depends-on-methods="allTest.HotelsTest.validateSearchCriteria" duration-ms="1164" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -296,7 +292,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifyOfferCodeSelection -->
-        <test-method signature="verifyPriceSummary()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[The price summary is correct based on the data displayed in the Room Booking page]&gt;]" started-at="2024-01-17T16:30:52 IST" name="verifyPriceSummary" description="To verify the displayed information of price summary" finished-at="2024-01-17T16:30:52 IST" depends-on-methods="allTest.HotelsTest.verifyOfferCodeSelection" duration-ms="168" status="PASS">
+        <test-method signature="verifyPriceSummary()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[The price summary is correct based on the data displayed in the Room Booking page]&gt;]" started-at="2024-01-17T16:33:38 IST" name="verifyPriceSummary" description="To verify the displayed information of price summary" finished-at="2024-01-17T16:33:39 IST" depends-on-methods="allTest.HotelsTest.verifyOfferCodeSelection" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -309,7 +305,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifyPriceSummary -->
-        <test-method signature="verifyRequiredFields()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[User is able to fill details in the required fields]&gt;]" started-at="2024-01-17T16:30:52 IST" name="verifyRequiredFields" description="To verify if user is able to fill all the required guest details" finished-at="2024-01-17T16:30:53 IST" depends-on-methods="allTest.HotelsTest.verifyPriceSummary" duration-ms="943" status="PASS">
+        <test-method signature="verifyRequiredFields()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[User is able to fill details in the required fields]&gt;]" started-at="2024-01-17T16:33:39 IST" name="verifyRequiredFields" description="To verify if user is able to fill all the required guest details" finished-at="2024-01-17T16:33:40 IST" depends-on-methods="allTest.HotelsTest.verifyPriceSummary" duration-ms="1015" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -322,7 +318,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifyRequiredFields -->
-        <test-method signature="verifyPaymentButton()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[User is redirected to payment gateway to complete the payment]&gt;]" started-at="2024-01-17T16:30:54 IST" name="verifyPaymentButton" description="To verify the functionality of &#039;Proceed To Payment Options&#039; button" finished-at="2024-01-17T16:30:59 IST" depends-on-methods="allTest.HotelsTest.verifyRequiredFields" duration-ms="4972" status="PASS">
+        <test-method signature="verifyPaymentButton()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[User is redirected to payment gateway to complete the payment]&gt;]" started-at="2024-01-17T16:33:40 IST" name="verifyPaymentButton" description="To verify the functionality of &#039;Proceed To Payment Options&#039; button" finished-at="2024-01-17T16:33:44 IST" depends-on-methods="allTest.HotelsTest.verifyRequiredFields" duration-ms="3745" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -335,7 +331,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifyPaymentButton -->
-        <test-method signature="verifyDetailsOnPaymentGateway()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[All the details displayed is correct]&gt;]" started-at="2024-01-17T16:30:59 IST" name="verifyDetailsOnPaymentGateway" description="To verify the details on the Payment Gateway page" finished-at="2024-01-17T16:30:59 IST" depends-on-methods="allTest.HotelsTest.verifyPaymentButton" duration-ms="148" status="PASS">
+        <test-method signature="verifyDetailsOnPaymentGateway()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[All the details displayed is correct]&gt;]" started-at="2024-01-17T16:33:44 IST" name="verifyDetailsOnPaymentGateway" description="To verify the details on the Payment Gateway page" finished-at="2024-01-17T16:33:44 IST" depends-on-methods="allTest.HotelsTest.verifyPaymentButton" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -348,7 +344,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifyDetailsOnPaymentGateway -->
-        <test-method signature="verifyCardPaymentOption()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[Enter card details message is displayed]&gt;]" started-at="2024-01-17T16:30:59 IST" name="verifyCardPaymentOption" description="To verify if user is able to choose &#039;Credit/Debit/ATM Card&#039; option" finished-at="2024-01-17T16:30:59 IST" depends-on-methods="allTest.HotelsTest.verifyDetailsOnPaymentGateway" duration-ms="241" status="PASS">
+        <test-method signature="verifyCardPaymentOption()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[Enter card details message is displayed]&gt;]" started-at="2024-01-17T16:33:44 IST" name="verifyCardPaymentOption" description="To verify if user is able to choose &#039;Credit/Debit/ATM Card&#039; option" finished-at="2024-01-17T16:33:44 IST" depends-on-methods="allTest.HotelsTest.verifyDetailsOnPaymentGateway" duration-ms="240" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -361,7 +357,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifyCardPaymentOption -->
-        <test-method signature="verifyCardDetailsFields()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[User is able to enter all required details]&gt;]" started-at="2024-01-17T16:31:00 IST" name="verifyCardDetailsFields" description="To verify if user is able to enter credit card details" finished-at="2024-01-17T16:31:01 IST" depends-on-methods="allTest.HotelsTest.verifyCardPaymentOption" duration-ms="1452" status="PASS">
+        <test-method signature="verifyCardDetailsFields()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[User is able to enter all required details]&gt;]" started-at="2024-01-17T16:33:45 IST" name="verifyCardDetailsFields" description="To verify if user is able to enter credit card details" finished-at="2024-01-17T16:33:46 IST" depends-on-methods="allTest.HotelsTest.verifyCardPaymentOption" duration-ms="1413" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -374,7 +370,7 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifyCardDetailsFields -->
-        <test-method signature="verifyPayWithoutSavingCardButton()[pri:0, instance:allTest.HotelsTest@710f4dc7, attributes: &lt;name: passMessage, value:[Error message is displayed as &#039;We are unable to process transactions for this user/card&#039;]&gt;]" started-at="2024-01-17T16:31:01 IST" name="verifyPayWithoutSavingCardButton" description="To verify functionality of &#039;Pay without saving card&#039; option" finished-at="2024-01-17T16:31:02 IST" depends-on-methods="allTest.HotelsTest.verifyCardDetailsFields" duration-ms="800" status="PASS">
+        <test-method signature="verifyPayWithoutSavingCardButton()[pri:0, instance:allTest.HotelsTest@1ff4931d, attributes: &lt;name: passMessage, value:[Error message is displayed as &#039;We are unable to process transactions for this user/card&#039;]&gt;]" started-at="2024-01-17T16:33:46 IST" name="verifyPayWithoutSavingCardButton" description="To verify functionality of &#039;Pay without saving card&#039; option" finished-at="2024-01-17T16:33:47 IST" depends-on-methods="allTest.HotelsTest.verifyCardDetailsFields" duration-ms="1114" status="PASS">
           <reporter-output>
           </reporter-output>
           <custom-attributes>
@@ -387,7 +383,340 @@
             </custom-attribute>
           </custom-attributes>
         </test-method> <!-- verifyPayWithoutSavingCardButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:allTest.HotelsTest@1ff4931d]" started-at="2024-01-17T16:33:48 IST" name="tearDown" finished-at="2024-01-17T16:33:49 IST" duration-ms="1155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- allTest.HotelsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+    <test started-at="2024-01-17T16:33:49 IST" name="Test2" finished-at="2024-01-17T16:34:16 IST" duration-ms="26746">
+      <class name="allTest.LoginTest">
+        <test-method is-config="true" signature="configPages()[pri:0, instance:allTest.LoginTest@757277dc]" started-at="2024-01-17T16:33:49 IST" name="configPages" finished-at="2024-01-17T16:33:51 IST" duration-ms="1909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configPages -->
+        <test-method signature="invalidSignIn(java.lang.String)[pri:0, instance:allTest.LoginTest@757277dc, attributes: &lt;name: passMessage, value:[Proper error messaged is displayed successfully]&gt;]" started-at="2024-01-17T16:33:51 IST" name="invalidSignIn" description="To verify that user is not able to enter invalid mobile number" data-provider="invalidMobileNumbers" finished-at="2024-01-17T16:33:54 IST" duration-ms="3369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[Proper error messaged is displayed successfully]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- invalidSignIn -->
+        <test-method signature="invalidSignIn(java.lang.String)[pri:0, instance:allTest.LoginTest@757277dc, attributes: &lt;name: passMessage, value:[Proper error messaged is displayed successfully]&gt;]" started-at="2024-01-17T16:33:55 IST" name="invalidSignIn" description="To verify that user is not able to enter invalid mobile number" data-provider="invalidMobileNumbers" finished-at="2024-01-17T16:33:55 IST" duration-ms="244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edf4567890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[Proper error messaged is displayed successfully]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- invalidSignIn -->
+        <test-method signature="signIn()[pri:0, instance:allTest.LoginTest@757277dc, attributes: &lt;name: passMessage, value:[User is logged in successfully]&gt;]" started-at="2024-01-17T16:33:55 IST" name="signIn" description="To verify that user is able to enter valid mobile number and able to login successfully" finished-at="2024-01-17T16:34:14 IST" depends-on-methods="allTest.LoginTest.invalidSignIn" duration-ms="19217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is logged in successfully]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- signIn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:allTest.LoginTest@757277dc]" started-at="2024-01-17T16:34:15 IST" name="tearDown" finished-at="2024-01-17T16:34:16 IST" duration-ms="1150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- allTest.LoginTest -->
+    </test> <!-- Test2 -->
+    <test started-at="2024-01-17T16:34:16 IST" name="Test3" finished-at="2024-01-17T16:36:46 IST" duration-ms="150206">
+      <class name="allTest.FlightTest">
+        <test-method is-config="true" signature="configurations()[pri:0, instance:allTest.FlightTest@6f45df59]" started-at="2024-01-17T16:32:49 IST" name="configurations" finished-at="2024-01-17T16:32:49 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurations -->
+        <test-method is-config="true" signature="configPages()[pri:0, instance:allTest.FlightTest@6f45df59]" started-at="2024-01-17T16:34:16 IST" name="configPages" finished-at="2024-01-17T16:34:20 IST" duration-ms="4275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configPages -->
+        <test-method signature="navigateToFLightsPage()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[User is redirected to flight booking page]&gt;]" started-at="2024-01-17T16:34:20 IST" name="navigateToFLightsPage" description="To validate if Flight menu button is diaplyed and is clickable" finished-at="2024-01-17T16:34:23 IST" duration-ms="2419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to flight booking page]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- navigateToFLightsPage -->
+        <test-method signature="verifyFromTextBox()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[A drop drown is displayed showing the city names list]&gt;]" started-at="2024-01-17T16:34:23 IST" name="verifyFromTextBox" description="To validate From textbox is enabled" finished-at="2024-01-17T16:34:23 IST" depends-on-methods="allTest.FlightTest.navigateToFLightsPage" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[A drop drown is displayed showing the city names list]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyFromTextBox -->
+        <test-method signature="verifyOriginCity()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[The option is clicked]&gt;]" started-at="2024-01-17T16:34:23 IST" name="verifyOriginCity" description="To verify if user is able to click Bengaluru from city dropdown list" finished-at="2024-01-17T16:34:24 IST" depends-on-methods="allTest.FlightTest.verifyFromTextBox" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[The option is clicked]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyOriginCity -->
+        <test-method signature="verifyToTextBox()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[A drop drown is displayed showing the city names list]&gt;]" started-at="2024-01-17T16:34:24 IST" name="verifyToTextBox" description="To validate To textbox is enabled" finished-at="2024-01-17T16:34:24 IST" depends-on-methods="allTest.FlightTest.verifyOriginCity" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[A drop drown is displayed showing the city names list]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyToTextBox -->
+        <test-method signature="verifyDestinationCity()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[The option is clicked]&gt;]" started-at="2024-01-17T16:34:24 IST" name="verifyDestinationCity" description="To verify if user is able to click Ranchi from city dropdown list" finished-at="2024-01-17T16:34:25 IST" depends-on-methods="allTest.FlightTest.verifyToTextBox" duration-ms="629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[The option is clicked]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyDestinationCity -->
+        <test-method signature="verifyDateBtn()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[A drop down calendar is displayed with showing the prices of flights for each day]&gt;]" started-at="2024-01-17T16:34:25 IST" name="verifyDateBtn" description="To verify Departure date button is clickable" finished-at="2024-01-17T16:34:25 IST" depends-on-methods="allTest.FlightTest.verifyDestinationCity" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[A drop down calendar is displayed with showing the prices of flights for each day]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyDateBtn -->
+        <test-method signature="validationOfLowestFares()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[The date is selected and is displayed]&gt;]" started-at="2024-01-17T16:34:25 IST" name="validationOfLowestFares" description="To verify fare displayed is lowest for the day" finished-at="2024-01-17T16:35:25 IST" depends-on-methods="allTest.FlightTest.verifyDateBtn" duration-ms="59691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[The date is selected and is displayed]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- validationOfLowestFares -->
+        <test-method signature="lowestDateSelection()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[A dropdown is displayed and final details is displayed]&gt;]" started-at="2024-01-17T16:35:25 IST" name="lowestDateSelection" description="To verify user is able to select date from Calendar for the lowest price" finished-at="2024-01-17T16:35:26 IST" depends-on-methods="allTest.FlightTest.validationOfLowestFares" duration-ms="667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[A dropdown is displayed and final details is displayed]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- lowestDateSelection -->
+        <test-method signature="enterTravellerDetails()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[User is redirected to avaible flights webpage]&gt;]" started-at="2024-01-17T16:35:26 IST" name="enterTravellerDetails" description="To verify user is able to add details in Travellers and class menu" finished-at="2024-01-17T16:35:26 IST" depends-on-methods="allTest.FlightTest.lowestDateSelection" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to avaible flights webpage]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- enterTravellerDetails -->
+        <test-method signature="verifySearchButton()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[Flight details having prices in ascending order is displayed]&gt;]" started-at="2024-01-17T16:35:27 IST" name="verifySearchButton" description="To verify the functionality of &quot;Search flights&quot; button after user click it" finished-at="2024-01-17T16:35:47 IST" depends-on-methods="allTest.FlightTest.enterTravellerDetails" duration-ms="20267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[Flight details having prices in ascending order is displayed]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifySearchButton -->
+        <test-method signature="verifyPriceFilter()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[User is redirected to overview details page]&gt;]" started-at="2024-01-17T16:35:47 IST" name="verifyPriceFilter" description="To verify the functionality of Price Filter" finished-at="2024-01-17T16:36:23 IST" depends-on-methods="allTest.FlightTest.verifySearchButton" duration-ms="35936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to overview details page]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyPriceFilter -->
+        <test-method signature="verifyBookBtn()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[The flight details is displayed]&gt;]" started-at="2024-01-17T16:36:23 IST" name="verifyBookBtn" description="To verify the functionality of &quot;Book now&quot; button after user click on cheapest price flight" finished-at="2024-01-17T16:36:25 IST" depends-on-methods="allTest.FlightTest.verifyPriceFilter" duration-ms="2419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[The flight details is displayed]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyBookBtn -->
+        <test-method signature="verifyFlightDetails()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[User is redirected to payment gateway to complete the payment]&gt;]" started-at="2024-01-17T16:36:26 IST" name="verifyFlightDetails" description="To verify the details of flight is displayed at overview page" finished-at="2024-01-17T16:36:27 IST" depends-on-methods="allTest.FlightTest.verifyBookBtn" duration-ms="842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to payment gateway to complete the payment]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyFlightDetails -->
+        <test-method signature="enterPassengerDetails([Ljava.lang.String;)[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[An error message is displayed stating &#039;Card number is not valid&#039;]&gt;]" started-at="2024-01-17T16:36:27 IST" name="enterPassengerDetails" description="To verify user is able to fill passenger details " data-provider="passengerDetails" finished-at="2024-01-17T16:36:42 IST" depends-on-methods="allTest.FlightTest.verifyFlightDetails" duration-ms="15548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@610d0067]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[An error message is displayed stating 'Card number is not valid']]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- enterPassengerDetails -->
+        <test-method signature="verifyPassengerDetails([Ljava.lang.String;)[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[User is redirected to flight booking page]&gt;]" started-at="2024-01-17T16:36:42 IST" name="verifyPassengerDetails" description="To verify passenger details are displayed correctly" data-provider="passengerDetails" finished-at="2024-01-17T16:36:43 IST" depends-on-methods="allTest.FlightTest.enterPassengerDetails" duration-ms="206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@429dde4d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to flight booking page]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyPassengerDetails -->
+        <test-method signature="verifyCardPaymentOption()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[User is redirected to flight booking page]&gt;]" started-at="2024-01-17T16:36:43 IST" name="verifyCardPaymentOption" description="To verify if user is able to choose &#039;Credit/Debit/ATM Card&#039; option" finished-at="2024-01-17T16:36:43 IST" depends-on-methods="allTest.FlightTest.verifyPassengerDetails" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to flight booking page]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyCardPaymentOption -->
+        <test-method signature="verifyCardDetailsFields()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[User is redirected to flight booking page]&gt;]" started-at="2024-01-17T16:36:43 IST" name="verifyCardDetailsFields" description="To verify if user is able to enter credit card details" finished-at="2024-01-17T16:36:44 IST" depends-on-methods="allTest.FlightTest.verifyCardPaymentOption" duration-ms="1243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to flight booking page]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyCardDetailsFields -->
+        <test-method signature="verifyPayWithoutSavingCardButton()[pri:0, instance:allTest.FlightTest@6f45df59, attributes: &lt;name: passMessage, value:[User is redirected to flight booking page]&gt;]" started-at="2024-01-17T16:36:45 IST" name="verifyPayWithoutSavingCardButton" description="To verify functionality of &#039;Pay without saving card&#039; option" finished-at="2024-01-17T16:36:45 IST" depends-on-methods="allTest.FlightTest.verifyCardDetailsFields" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+          <custom-attributes>
+            <custom-attribute>
+              <name value="passMessage">
+              </name>
+              <value>
+                <![CDATA[[User is redirected to flight booking page]]]>
+              </value>
+            </custom-attribute>
+          </custom-attributes>
+        </test-method> <!-- verifyPayWithoutSavingCardButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:allTest.FlightTest@6f45df59]" started-at="2024-01-17T16:36:45 IST" name="tearDown" finished-at="2024-01-17T16:36:46 IST" duration-ms="1171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- allTest.FlightTest -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
 </testng-results>
