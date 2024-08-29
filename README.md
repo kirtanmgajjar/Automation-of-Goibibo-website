@@ -1,6 +1,6 @@
 About the Project:
 
-This project consist of Automation of Goibibo Website for LOgin, Flight Booking and Hotel Booking scenario.
+This project consist of Automation of Goibibo Website for Login, Flight Booking and Hotel Booking scenario.
 
 
 src/main/java has the packages baseClass and utilities
